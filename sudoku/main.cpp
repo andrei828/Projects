@@ -94,15 +94,12 @@ void display(int **a){                                //displays matrix
 int main() {
     
     int **grid = new int*[100];
+    
     for(int i = 0; i < 100; i++){
         grid[i] = new int[100];
     }
     n = 9;
-    /*for(int i = 0; i < n; i++){
-        for(int j = 0 ; j < n ; j++){
-            grid[i][j] = NULL;
-        }
-    }*/
+    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
