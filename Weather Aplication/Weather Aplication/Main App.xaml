@@ -1,0 +1,255 @@
+﻿<Page x:Class="Weather_Aplication.Main_App"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Weather_Aplication"
+      xmlns:clr="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Main_App"  Height="518" Width="320" Background="{x:Null}">
+
+    <Page.Resources>
+        <!-- ds Photos-->
+        <BitmapImage x:Key="ds_clear_day" UriSource="./Pictures/ds/ds_clear_day.png" />
+        <BitmapImage x:Key="ds_clear_night" UriSource="./Pictures/ds/ds_clear_night.png" />
+        <BitmapImage x:Key="ds_cloudy_day_night" UriSource="./Pictures/ds/ds_cloudy_day_night.png" />
+        <BitmapImage x:Key="ds_dust_day_night" UriSource="./Pictures/ds/ds_dust_day_night.png" />
+        <BitmapImage x:Key="ds_fair_day" UriSource="./Pictures/ds/ds_fair_day.png" />
+        <BitmapImage x:Key="ds_fair_night" UriSource="./Pictures/ds/ds_fair_night.png" />
+        <BitmapImage x:Key="ds_flurries_day_night" UriSource="./Pictures/ds/ds_flurries_day_night.png" />
+        <BitmapImage x:Key="ds_fog_day_night" UriSource="./Pictures/ds/ds_fog_day_night.png" />
+        <BitmapImage x:Key="ds_fog_moon_night" UriSource="./Pictures/ds/ds_fog_moon_night.png" />
+        <BitmapImage x:Key="ds_fog_sun_day" UriSource="./Pictures/ds/ds_fog_sun_day.png" />
+        <BitmapImage x:Key="ds_freezing_rain_day_night" UriSource="./Pictures/ds/ds_freezing_rain_day_night.png" />
+        <BitmapImage x:Key="ds_hail_day_night" UriSource="./Pictures/ds/ds_hail_day_night.png" />
+        <BitmapImage x:Key="ds_haze_day_night" UriSource="./Pictures/ds/ds_haze_day_night.png" />
+        <BitmapImage x:Key="ds_heavy_rain_day_night" UriSource="./Pictures/ds/ds_heavy_rain_day_night.png" />
+        <BitmapImage x:Key="ds_heavy_snow_day_night" UriSource="./Pictures/ds/ds_heavy_snow_day_night.png" />
+        <BitmapImage x:Key="ds_hurricane_day_night" UriSource="./Pictures/ds/ds_hurricane_day_night.png" />
+        <BitmapImage x:Key="ds_light_rain_day_night" UriSource="./Pictures/ds/ds_light_rain_day_night.png" />
+        <BitmapImage x:Key="ds_mostly_cloudy_day_night" UriSource="./Pictures/ds/ds_mostly_cloudy_day_night.png" />
+        <BitmapImage x:Key="ds_partly_cloudy_day" UriSource="./Pictures/ds/ds_partly_cloudy_day.png" />
+        <BitmapImage x:Key="ds_partly_cloudy_night" UriSource="./Pictures/ds/ds_partly_cloudy_night.png" />
+        <BitmapImage x:Key="ds_rain_day_night" UriSource="./Pictures/ds/ds_rain_day_night.png" />
+        <BitmapImage x:Key="ds_scattered_showers_day_night" UriSource="./Pictures/ds/ds_scattered_showers_day_night.png" />
+        <BitmapImage x:Key="ds_scattered_thundershowers_night" UriSource="./Pictures/ds/ds_scattered_thundershowers_night.png" />
+        <BitmapImage x:Key="ds_scatttered_thundershowers_day" UriSource="./Pictures/ds/ds_scatttered_thundershowers_day.png" />
+        <BitmapImage x:Key="ds_sleet_mix_day_night" UriSource="./Pictures/ds/ds_sleet_mix_day_night.png" />
+        <BitmapImage x:Key="ds_smoky_day_night" UriSource="./Pictures/ds/ds_smoky_day_night.png" />
+        <BitmapImage x:Key="ds_snow_day_night" UriSource="./Pictures/ds/ds_snow_day_night.png" />
+        <BitmapImage x:Key="ds_snow_rain_mix_day_night" UriSource="./Pictures/ds/ds_snow_rain_mix_day_night.png" />
+        <BitmapImage x:Key="ds_thundershowers_day_night" UriSource="./Pictures/ds/ds_thundershowers_day_night.png" />
+        <BitmapImage x:Key="ds_tornado_day_night" UriSource="./Pictures/ds/ds_tornado_day_night.png" />
+        <BitmapImage x:Key="ds_windy_day_night" UriSource="./Pictures/ds/ds_windy_day_night.png" />
+
+        <!-- Other Photos -->
+        <BitmapImage x:Key="clear_day" UriSource="./Pictures/clear_day.png" />
+        <BitmapImage x:Key="clear_night" UriSource="./Pictures/clear_night.png" />
+        <BitmapImage x:Key="cloudy_day_night" UriSource="./Pictures/cloudy_day_night.png" />
+        <BitmapImage x:Key="dust_day_night" UriSource="./Pictures/dust_day_night.png" />
+        <BitmapImage x:Key="fair_day" UriSource="./Pictures/fair_day.png" />
+        <BitmapImage x:Key="fair_night" UriSource="./Pictures/fair_night.png" />
+        <BitmapImage x:Key="flurries_day_night" UriSource="./Pictures/flurries_day_night.png" />
+        <BitmapImage x:Key="fog_day_night" UriSource="./Pictures/fog_day_night.png" />
+        <BitmapImage x:Key="fog_moon_night" UriSource="./Pictures/fog_moon_night.png" />
+        <BitmapImage x:Key="fog_sun_day" UriSource="./Pictures/fog_sun_day.png" />
+        <BitmapImage x:Key="freezing_rain_day_night" UriSource="./Pictures/freezing_rain_day_night.png" />
+        <BitmapImage x:Key="hail_day_night" UriSource="./Pictures/hail_day_night.png" />
+        <BitmapImage x:Key="haze_day_night" UriSource="./Pictures/haze_day_night.png" />
+        <BitmapImage x:Key="heavy_rain_day_night" UriSource="./Pictures/heavy_rain_day_night.png" />
+        <BitmapImage x:Key="heavy_snow_day_night" UriSource="./Pictures/heavy_snow_day_night.png" />
+        <BitmapImage x:Key="hurricane_day_night" UriSource="./Pictures/hurricane_day_night.png" />
+        <BitmapImage x:Key="onboarding_partlycloudy" UriSource="./Pictures/onboarding_partlycloudy.png" />
+        <BitmapImage x:Key="onboarding_rain" UriSource="./Pictures/onboarding_rain.png" />
+        <BitmapImage x:Key="partly_cloudy_day" UriSource="./Pictures/partly_cloudy_day.png" />
+        <BitmapImage x:Key="rain_day_night" UriSource="./Pictures/rain_day_night.png" />
+        <BitmapImage x:Key="rain_ico_0" UriSource="./Pictures/rain_ico_0.png" />
+        <BitmapImage x:Key="rain_ico_10" UriSource="./Pictures/rain_ico_10.png" />
+        <BitmapImage x:Key="rain_ico_100" UriSource="./Pictures/rain_ico_100.png" />
+        <BitmapImage x:Key="rain_ico_20" UriSource="./Pictures/rain_ico_20.png" />
+        <BitmapImage x:Key="rain_ico_30" UriSource="./Pictures/rain_ico_30.png" />
+        <BitmapImage x:Key="rain_ico_40" UriSource="./Pictures/rain_ico_40.png" />
+        <BitmapImage x:Key="rain_ico_50" UriSource="./Pictures/rain_ico_50.png" />
+        <BitmapImage x:Key="rain_ico_60" UriSource="./Pictures/rain_ico_60.png" />
+        <BitmapImage x:Key="rain_ico_70" UriSource="./Pictures/rain_ico_70.png" />
+        <BitmapImage x:Key="rain_ico_80" UriSource="./Pictures/rain_ico_80.png" />
+        <BitmapImage x:Key="rain_ico_90" UriSource="./Pictures/rain_ico_90.png" />
+        <BitmapImage x:Key="scattered_showers_day_night" UriSource="./Pictures/scattered_showers_day_night.png" />
+        <BitmapImage x:Key="scattered_thunderstorms_night" UriSource="./Pictures/scattered_thunderstorms_night.png" />
+        <BitmapImage x:Key="scatttered_thundershowers_day" UriSource="./Pictures/scatttered_thundershowers_day.png" />
+        <BitmapImage x:Key="sleet_day_night" UriSource="./Pictures/sleet_day_night.png" />
+        <BitmapImage x:Key="sleet_mix_day_night" UriSource="./Pictures/sleet_mix_day_night.png" />
+        <BitmapImage x:Key="smoky_day_night" UriSource="./Pictures/smoky_day_night.png" />
+        <BitmapImage x:Key="snow_day_night" UriSource="./Pictures/snow_day_night.png" />
+        <BitmapImage x:Key="snow_rain_mix_day_night" UriSource="./Pictures/snow_rain_mix_day_night.png" />
+        <BitmapImage x:Key="thundershowers_day_night" UriSource="./Pictures/thundershowers_day_night.png" />
+        <BitmapImage x:Key="thunderstorm_day_night" UriSource="./Pictures/thunderstorm_day_night.png" />
+        <BitmapImage x:Key="tornado_day_night" UriSource="./Pictures/tornado_day_night.png" />
+        <BitmapImage x:Key="windowicons" UriSource="./Pictures/windowicons.png" />
+        <BitmapImage x:Key="search" UriSource="./Pictures/search.png" />
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="Current_Day_Image" Grid.Row="2" Grid.Column="0" Source="{StaticResource ResourceKey=fair_day}"/>
+            <TextBlock x:Name="Current_Temp" Grid.Column="1" Height="60" Width="80" FontSize="40"  FontWeight="DemiBold"  Foreground="White"/>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="1" Grid.Column="0" Foreground="White" Content="Min" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="15"/>
+            <Label Grid.Row="1" Grid.Column="1" Foreground="White" Content="Max" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="15"/>
+            <Label Grid.Row="1" Grid.Column="2" Foreground="White" Content="Hum" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="15"/>
+            <Label Grid.Row="1" Grid.Column="3" Foreground="White" Content="Wind" HorizontalContentAlignment="Center" VerticalAlignment="Center"
+                   FontSize="15"/>
+            <Label Grid.Row="1" Grid.Column="4" Foreground="White" Content="Speed" HorizontalContentAlignment="Center" VerticalAlignment="Center"
+                   FontSize="15"/>
+
+            <Label x:Name="Current_Temp_Min" Grid.Row="2" Grid.Column="0" Foreground="White" Content="..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="18"/>
+            <Label x:Name="Current_Temp_Max" Grid.Row="2" Grid.Column="1" Foreground="White" Content="..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="18"/>
+            <Label x:Name="Current_Humidity" Grid.Row="2" Grid.Column="2" Foreground="White" Content="..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="18"/>
+            <Label x:Name="Current_Wind" Grid.Row="2" Grid.Column="3" Foreground="White" Content="..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="18"/>
+            <Label x:Name="Current_Wind_Speed" Grid.Row="2" Grid.Column="4" Foreground="White" Content="..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="18"/>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.ColumnSpan="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="Next_day_1" Grid.Row="1" Content="..." Foreground="White" HorizontalAlignment="Center"
+                   HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Top"
+                   Margin="10,0,58,-5" Width="124" Grid.ColumnSpan="2"
+                   FontSize="18" FontWeight="Light"/>
+
+            <Image x:Name="Next_day_1_Image"  Grid.Row="1" Grid.Column="1" 
+                   Source="{StaticResource ResourceKey=ds_clear_day}" />
+            
+            <Label x:Name="Next_day_1_Temp_Max" Grid.Row="1" Grid.Column="2" FontSize="15" Foreground="White" />
+            <Label x:Name="Next_day_1_Temp_Min" Grid.Row="1" Grid.Column="3" FontSize="15" Foreground="White" />
+
+            <Label x:Name="Next_day_2" Grid.Row="2" Content="..." Foreground="White" HorizontalAlignment="Center"
+                   HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Top"
+                   Margin="10,0,58,-5" Width="124" Grid.ColumnSpan="2"
+                   FontSize="18" FontWeight="Light"/>
+
+            <Image x:Name="Next_day_2_Image" Grid.Row="2" Grid.Column="1" 
+                   Source="{StaticResource ResourceKey=ds_heavy_rain_day_night}" />
+            
+            <Label x:Name="Next_day_2_Temp_Max" Grid.Row="2" Grid.Column="2" FontSize="15" Foreground="White" />
+            <Label x:Name="Next_day_2_Temp_Min" Grid.Row="2" Grid.Column="3" FontSize="15" Foreground="White" />
+
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.ColumnSpan="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="Next_day_3" Grid.Row="0" Content="..." Foreground="White" HorizontalAlignment="Center"
+                   HorizontalContentAlignment="Center"  VerticalAlignment="Top" VerticalContentAlignment="Top"
+                   Margin="10,0,58,-5" Width="124" Grid.ColumnSpan="2"
+                   FontSize="18" FontWeight="Light"/>
+
+            <Image x:Name="Next_day_3_Image" Grid.Row="0" Grid.Column="1" 
+                   Source="{StaticResource ResourceKey=ds_fog_sun_day}" />
+            <Label x:Name="Next_day_3_Temp_Max" Grid.Row="0" Grid.Column="2" FontSize="15" Foreground="White" />
+            <Label x:Name="Next_day_3_Temp_Min" Grid.Row="0" Grid.Column="3" FontSize="15" Foreground="White" />
+
+            <Label x:Name="Next_day_4" Grid.Row="1" Content="..." Foreground="White" HorizontalAlignment="Center" 
+                   HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Top" 
+                   Margin="10,0,58,-5" Width="124" Grid.ColumnSpan="2"
+                   FontSize="18" FontWeight="Light"/>
+
+            <Image x:Name="Next_day_4_Image" Grid.Row="1" Grid.Column="1" 
+                   Source="{StaticResource ResourceKey=ds_heavy_snow_day_night}" />
+            <Label x:Name="Next_day_4_Temp_Max" Grid.Row="1" Grid.Column="2" FontSize="15" Foreground="White" />
+            <Label x:Name="Next_day_4_Temp_Min" Grid.Row="1" Grid.Column="3" FontSize="15" Foreground="White" />
+        </Grid>
+
+        <Label x:Name="City_Name" Foreground="White" Content="Bucharest" Grid.ColumnSpan="2" 
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"
+               TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display"
+               FontSize="50" Margin="10,42,10,44" Width="300"/>
+
+        <Image x:Name="search_image" Width="30" Height="30" Stretch="UniformToFill" MouseUp="Search"
+               Source="{StaticResource ResourceKey=search}" Margin="3,3,287,53.667" />
+
+        <StackPanel FocusManager.FocusedElement="{Binding ElementName=TextBox_Search}">
+            <TextBox x:Name="TextBox_Search" Width="150" Height="30" Background="Transparent" Margin="14,6,156,50.667"
+                 BorderThickness="0" TextWrapping="Wrap" SelectionBrush="White" CaretBrush="White"
+                 FontSize="20" Foreground="White" Focusable="True" KeyDown="GetCityString" KeyUp="HideSuggestion"/>
+        </StackPanel>
+        
+        <Label x:Name="Suggest_City" Width="150" Height="30" Margin="12,30,158,26.667"
+               FontSize="18" FontWeight="Bold" Foreground="White" Background="Transparent"
+               Visibility="Hidden" MouseDown="UseSuggestion"/>
+
+        <Label x:Name="Current_Status" Content="..." Foreground="White"  HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" Margin="0,10,0,76" Grid.Row="1" Grid.RowSpan="2" 
+               FontSize="25" FontWeight="Light" />
+
+        <Label x:Name="Current_Time" Content="..." Foreground="White"  HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" Margin="171,6,4,45.667" 
+               FontSize="15" FontWeight="ExtraLight"/>
+    </Grid>
+</Page>

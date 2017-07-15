@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\app_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="app_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\app_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_morning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\bg_morning.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\clear_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\clear_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\clear_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\clear_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudy_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\cloudy_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudy_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\cloudy_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudy_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\cloudy_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_clear_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_clear_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_clear_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_clear_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_cloudy_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_cloudy_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_dust_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_dust_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_fair_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_fair_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_fair_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_fair_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_flurries_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_flurries_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_fog_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_fog_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_fog_moon_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_fog_moon_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_fog_sun_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_fog_sun_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_freezing_rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_freezing_rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_hail_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_hail_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_haze_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_haze_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_heavy_rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_heavy_rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_heavy_snow_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_heavy_snow_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_hurricane_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_hurricane_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_light_rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_light_rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_mostly_cloudy_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_mostly_cloudy_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_partly_cloudy_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_partly_cloudy_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_partly_cloudy_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_partly_cloudy_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_scattered_showers_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_scattered_showers_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_scattered_thundershowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_scattered_thundershowers_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_scatttered_thundershowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_scatttered_thundershowers_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_sleet_mix_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_sleet_mix_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_smoky_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_smoky_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_snow_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_snow_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_snow_rain_mix_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_snow_rain_mix_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_thundershowers_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_thundershowers_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_tornado_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_tornado_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ds_windy_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\ds\ds_windy_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dust_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\dust_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fair_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\fair_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fair_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\fair_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flurries_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\flurries_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foggy_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\foggy_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foggy_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\foggy_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fog_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\fog_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fog_moon_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\fog_moon_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fog_sun_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\fog_sun_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freezing_rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\freezing_rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hail_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\hail_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haze_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\haze_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heavy_rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\heavy_rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heavy_snow_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\heavy_snow_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hurricane_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\hurricane_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onboarding_partlycloudy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\onboarding_partlycloudy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onboarding_rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\onboarding_rain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="partly_cloudy_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\partly_cloudy_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\rain_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_ico_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\rain_ico_90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\rain_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scattered_showers_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\scattered_showers_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scattered_thunderstorms_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\scattered_thunderstorms_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scatttered_thundershowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\scatttered_thundershowers_day.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleet_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\sleet_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleet_mix_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\sleet_mix_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smoky_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\smoky_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\snow_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\snow_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\snow_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow_rain_mix_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\snow_rain_mix_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="storm_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\storm_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="storm_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\storm_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thundershowers_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\thundershowers_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thunderstorm_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\thunderstorm_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tornado_day_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\tornado_day_night.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windowicons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\windowicons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Get_Data_For_App" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Get_Data_For_App.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\-.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_evening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\bg_evening.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_return" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Cities.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Amsterdam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Amsterdam.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Ankara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Ankara.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Athens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Athens.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Belgrade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Belgrade.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Berlin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Berlin.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Bratislava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Bratislava.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Brussels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Brussels.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Bucharest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Bucharest.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Budapest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Budapest.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Chisinau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Chisinau.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Copenhagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Copenhagen.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Dublin_Airport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Dublin Airport.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Helsinki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Helsinki.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Kiev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Kiev.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Lisbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Lisbon.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Ljubljana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Ljubljana.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_London" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_London.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Luxembourg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Luxembourg.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Madrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Madrid.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Malta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Malta.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Minsk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Minsk.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Moscow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Moscow.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Oslo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Oslo.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Paris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Paris.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Podgorica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Podgorica.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Praha_Libus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Praha-Libus.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Pratica_Di_Mare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Pratica Di Mare.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Reykjavik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Reykjavik.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Riga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Riga.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Sarajevo_Bejelave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Sarajevo-Bejelave.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Skopje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Skopje.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Sofia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Sofia.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Stockholm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Stockholm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Tallinn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Tallinn.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Tirana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Tirana.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Vaduz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Vaduz.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Vienna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Vienna.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="Get_Data_For_App_Vilnius" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Python\Get_Data_For_App_Vilnius.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+</root>

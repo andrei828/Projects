@@ -1,0 +1,1322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{554C4BC9-A4EE-4467-8813-B5DE09AFA36E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Weather_Aplication</RootNamespace>
+    <AssemblyName>Weather Aplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main_App.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="app_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\scattered_thunderstorms_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\scatttered_thundershowers_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\sleet_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\sleet_mix_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\smoky_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\snow_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\snow_rain_mix_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\thundershowers_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\thunderstorm_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\tornado_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\windowicons.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\app_icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\app_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\clear_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\clear_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\cloudy_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\dust_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\fair_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\fair_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\flurries_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\fog_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\fog_moon_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\fog_sun_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\freezing_rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\hail_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\haze_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\heavy_rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\heavy_snow_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\hurricane_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\i.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\onboarding_partlycloudy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\onboarding_rain.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\partly_cloudy_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_20.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_30.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_40.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_50.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_60.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_70.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_80.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_90.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\rain_ico_100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\return.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\scattered_showers_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\clear_d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\clear_n.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\cloudy_d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\cloudy_n.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\foggy_d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\foggy_n.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\rain_d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\rain_n.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\snow_d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\snow_n.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\storm_d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\storm_n.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\bg_evening.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds\bg_morning.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Temperaturi\temp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Temperaturi\temp29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp97.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp116.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp139.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp148.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp153.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp159.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Temperaturi\temp_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Temperaturi\temp_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_cloudy_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_dust_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_fair_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_fair_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_flurries_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_fog_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_fog_moon_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_fog_sun_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_freezing_rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_hail_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_haze_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_heavy_rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_heavy_snow_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_hurricane_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_light_rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_mostly_cloudy_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_partly_cloudy_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_partly_cloudy_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_rain_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_scattered_showers_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_scattered_thundershowers_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_scatttered_thundershowers_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_sleet_mix_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_smoky_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_snow_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_snow_rain_mix_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_thundershowers_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_tornado_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_windy_day_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_clear_day.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\ds\ds_clear_night.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Get_Data_For_App.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Vilnius.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Vienna.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Vaduz.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Tirana.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Tallinn.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Stockholm.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Sofia.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Skopje.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Sarajevo-Bejelave.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Riga.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Reykjavik.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Pratica Di Mare.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Praha-Libus.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Podgorica.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Paris.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Oslo.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Moscow.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Minsk.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Malta.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Madrid.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Luxembourg.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_London.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Ljubljana.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Lisbon.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Kiev.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Helsinki.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Dublin Airport.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Copenhagen.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Chisinau.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Budapest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Bucharest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Brussels.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Bratislava.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Berlin.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Belgrade.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Athens.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Ankara.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Get_Data_For_App_Amsterdam.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Python\Cities.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Pictures\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\-.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
