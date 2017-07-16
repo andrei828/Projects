@@ -249,6 +249,14 @@ namespace Weather_Aplication
             }
         }
 
+        private void Loading()
+        {
+            City_Name.Content = "Loading...";
+            search_image.Visibility = Visibility.Hidden;
+            Current_Time.Visibility = Visibility.Hidden;
+            
+        }
+
         private void InitCities()
         {
             Citites = new List<string>() {

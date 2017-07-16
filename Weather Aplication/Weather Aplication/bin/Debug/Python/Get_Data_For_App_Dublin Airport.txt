@@ -1,12 +1,12 @@
 22
-33
+52
 16.07.2017
 Sunday
 3:23
 21:28
 clear
-22
-10
+23
+9
 SW
 7.2
 17.07.2017
@@ -15,7 +15,7 @@ Monday
 21:26
 prevailingly cloudy
 19
-9
+10
 SW
 14.4
 18.07.2017
@@ -23,9 +23,9 @@ Tuesday
 3:27
 21:24
 partly cloudy
-20
-10
-NW
+21
+9
+W
 14.4
 19.07.2017
 Wednesday
@@ -33,8 +33,8 @@ Wednesday
 21:22
 prevailingly cloudy
 18
-10
-W
+11
+NW
 14.4
 20.07.2017
 Thursday
@@ -42,7 +42,7 @@ Thursday
 21:20
 partly cloudy
 19
-8
-SW
+10
+NW
 14.4
 Dublin Airport

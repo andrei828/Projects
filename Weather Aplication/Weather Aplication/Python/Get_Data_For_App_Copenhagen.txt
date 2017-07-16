@@ -1,5 +1,5 @@
 18
-66
+93
 16.07.2017
 Sunday
 6:17
@@ -13,36 +13,36 @@ W
 Monday
 6:18
 22:43
-partly cloudy
-21
+clear
+22
 10
-S
+SW
 0.7200000000000001
 18.07.2017
 Tuesday
 6:20
 22:42
-cloudy
-20
-13
+mostly clear
+21
+12
 SE
 14.4
 19.07.2017
 Wednesday
 6:21
 22:41
-prevailingly cloudy
-20
+cloudy
+21
 15
-S
-7.2
+SE
+14.4
 20.07.2017
 Thursday
 6:22
 22:39
-cloudy
-18
+prevailingly cloudy
+17
 10
 SW
-25.2
+14.4
 Copenhagen

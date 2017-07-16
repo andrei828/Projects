@@ -1,12 +1,12 @@
 35
-18
+54
 16.07.2017
 Sunday
 6:58
 21:43
 clear
 37
-21
+22
 S
 3.6
 17.07.2017
@@ -31,7 +31,7 @@ SW
 Wednesday
 7:00
 21:41
-clear
+mostly clear
 32
 21
 SW
@@ -40,9 +40,9 @@ SW
 Thursday
 7:01
 21:40
-mostly clear
-33
+prevailingly cloudy
+32
 20
 SW
-3.6
+7.2
 Luxembourg

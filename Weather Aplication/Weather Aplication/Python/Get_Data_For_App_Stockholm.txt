@@ -1,5 +1,5 @@
 21
-55
+60
 16.07.2017
 Sunday
 3:35
@@ -7,14 +7,14 @@ Sunday
 clear
 21
 10
-N
+NW
 7.2
 17.07.2017
 Monday
 3:37
 21:19
 prevailingly cloudy
-19
+18
 11
 W
 14.4
@@ -22,27 +22,27 @@ W
 Tuesday
 3:39
 21:17
-partly cloudy
-19
+mostly clear
+20
 12
 W
-14.4
+25.2
 19.07.2017
 Wednesday
 3:41
 21:16
-partly cloudy
+mostly clear
 18
 11
-W
+NW
 25.2
 20.07.2017
 Thursday
 3:43
 21:14
-partly cloudy
-19
-10
-NW
-7.2
+prevailingly cloudy
+18
+12
+W
+14.4
 Stockholm

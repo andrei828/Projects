@@ -1,12 +1,12 @@
 16
-63
+87
 16.07.2017
 Sunday
 4:48
 21:42
-prevailingly cloudy
+cloudy
 18
-15
+14
 S
 32.4
 17.07.2017
@@ -23,7 +23,7 @@ Tuesday
 4:51
 21:39
 prevailingly cloudy
-19
+18
 14
 W
 25.2
@@ -33,16 +33,16 @@ Wednesday
 21:37
 mostly clear
 18
-13
+14
 S
-14.4
+7.2
 20.07.2017
 Thursday
 4:55
 21:36
-prevailingly cloudy
-20
+cloudy
+19
 16
 SE
-25.2
+14.4
 Budapest

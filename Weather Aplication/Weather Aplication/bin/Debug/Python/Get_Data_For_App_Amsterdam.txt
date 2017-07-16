@@ -1,11 +1,11 @@
-20
-56
+21
+96
 16.07.2017
 Sunday
 5:39
 21:55
 cloudy
-20
+21
 16
 W
 14.4
@@ -13,7 +13,7 @@ W
 Monday
 5:40
 21:53
-mostly clear
+prevailingly cloudy
 21
 14
 NW
@@ -31,18 +31,18 @@ E
 Wednesday
 5:43
 21:51
-prevailingly cloudy
-29
-18
-S
-14.4
+partly cloudy
+31
+17
+SE
+25.2
 20.07.2017
 Thursday
 5:44
 21:50
 prevailingly cloudy
-20
+22
 18
-W
-25.2
+SW
+14.4
 Amsterdam

@@ -1,12 +1,12 @@
 30
-54
+32
 16.07.2017
 Sunday
 5:50
 20:42
 mostly clear
 30
-23
+22
 NE
 14.4
 17.07.2017
@@ -24,14 +24,14 @@ Tuesday
 20:41
 clear
 28
-24
+23
 S
 14.4
 19.07.2017
 Wednesday
 5:52
 20:40
-partly cloudy
+prevailingly cloudy
 28
 21
 W
@@ -40,9 +40,9 @@ W
 Thursday
 5:53
 20:40
-mostly clear
+clear
 28
 21
-SW
+W
 14.4
 Praha-Libus

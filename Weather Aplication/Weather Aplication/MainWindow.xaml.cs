@@ -29,22 +29,27 @@ namespace Weather_Aplication
         public MainWindow()
         {
             InitializeComponent();
-            run_cmd("python.exe", "./Python/GetData.py");
+            run_cmd();
             lines = System.IO.File.ReadAllLines("./Python/Get_Data_For_App_Bucharest.txt");
             Background_Image();
             Return_but.Visibility = Visibility.Hidden;
             Main.Content = new Main_App();
         }
 
-        private void run_cmd(string cmd, string args)
+        private void run_cmd()
         {
-            Process process = new Process();
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            startInfo.FileName = cmd;
-            startInfo.Arguments = args;
-            process.StartInfo = startInfo;
-            process.Start();
+            try
+            {
+                Process proc = new Process();
+                proc.StartInfo.FileName = "Batch.bat";
+                proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                proc.Start();
+                proc.WaitForExit();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Batch file error");
+            }
         }
 
         private void DragBar(object sender, MouseButtonEventArgs e)
@@ -82,7 +87,7 @@ namespace Weather_Aplication
             Console.WriteLine(now);
             DateTime Night = DateTime.Today.AddHours(20.0);
 
-            if (now > Night)
+            /*if (now > Night)
             {
                 if (lines[6] == "mostly clear" || lines[6] == "clear")
                     back_image.ImageSource = (BitmapImage)Resources["clear_n"];
@@ -99,8 +104,8 @@ namespace Weather_Aplication
                     back_image.ImageSource = (BitmapImage)Resources["cloudy_d"];
                 if (lines[6] == "prevailingly cloudy")
                     back_image.ImageSource = (BitmapImage)Resources["cloudy_d"]; 
-            }
-            //back_image.ImageSource = (BitmapImage)Resources["bg_evening"];
+            }*/
+            back_image.ImageSource = (BitmapImage)Resources["cloudy_n"];
         }
     }
 }

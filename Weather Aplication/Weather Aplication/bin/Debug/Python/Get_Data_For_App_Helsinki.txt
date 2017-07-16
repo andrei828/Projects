@@ -1,22 +1,22 @@
-21
-45
+22
+59
 16.07.2017
 Sunday
 4:05
 20:02
-prevailingly cloudy
+mostly clear
 22
-12
+11
 NW
 14.4
 17.07.2017
 Monday
 4:06
 20:01
-prevailingly cloudy
-23
-12
-NW
+partly cloudy
+24
+11
+W
 7.2
 18.07.2017
 Tuesday
@@ -24,16 +24,16 @@ Tuesday
 20:00
 prevailingly cloudy
 25
-14
+13
 W
-7.2
+14.4
 19.07.2017
 Wednesday
 4:08
 19:59
-prevailingly cloudy
-23
-16
+mostly clear
+25
+14
 N
 14.4
 20.07.2017
@@ -41,8 +41,8 @@ Thursday
 4:09
 19:58
 mostly clear
-26
-15
-NE
+27
+14
+SE
 7.2
 Helsinki

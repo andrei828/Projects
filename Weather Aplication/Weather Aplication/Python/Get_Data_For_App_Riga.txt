@@ -1,20 +1,20 @@
 16
-46
+79
 16.07.2017
 Sunday
 5:19
 20:25
-prevailingly cloudy
+partly cloudy
 17
 10
-N
+NE
 14.4
 17.07.2017
 Monday
 5:20
 20:25
 clear
-21
+22
 9
 NE
 14.4
@@ -25,8 +25,8 @@ Tuesday
 mostly clear
 25
 10
-N
-3.6
+NE
+7.2
 19.07.2017
 Wednesday
 5:22
@@ -43,6 +43,6 @@ Thursday
 mostly clear
 28
 16
-NW
+W
 3.6
 Riga

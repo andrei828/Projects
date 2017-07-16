@@ -1,5 +1,5 @@
-23
-34
+24
+56
 16.07.2017
 Sunday
 4:25
@@ -7,14 +7,14 @@ Sunday
 prevailingly cloudy
 24
 15
-NW
+N
 7.2
 17.07.2017
 Monday
 4:26
 19:54
-prevailingly cloudy
-25
+cloudy
+26
 17
 N
 7.2
@@ -22,8 +22,8 @@ N
 Tuesday
 4:27
 19:53
-mostly clear
-28
+partly cloudy
+27
 14
 N
 14.4
@@ -31,18 +31,18 @@ N
 Wednesday
 4:28
 19:52
-prevailingly cloudy
-28
-15
+partly cloudy
+29
+16
 N
 14.4
 20.07.2017
 Thursday
 4:29
 19:51
-clear
-29
-15
+mostly clear
+30
+16
 N
-3.6
+7.2
 Kiev

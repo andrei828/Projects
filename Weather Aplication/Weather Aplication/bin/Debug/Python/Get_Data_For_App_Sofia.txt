@@ -1,5 +1,5 @@
-21
-34
+22
+72
 16.07.2017
 Sunday
 4:00
@@ -13,8 +13,8 @@ S
 Monday
 4:02
 21:46
-partly cloudy
-22
+mostly clear
+21
 13
 W
 25.2
@@ -23,7 +23,7 @@ Tuesday
 4:04
 21:44
 partly cloudy
-20
+21
 12
 NW
 14.4
@@ -31,9 +31,9 @@ NW
 Wednesday
 4:06
 21:42
-prevailingly cloudy
+mostly clear
 22
-11
+12
 W
 14.4
 20.07.2017
@@ -42,7 +42,7 @@ Thursday
 21:41
 partly cloudy
 22
-10
-SE
+11
+E
 14.4
 Sofia

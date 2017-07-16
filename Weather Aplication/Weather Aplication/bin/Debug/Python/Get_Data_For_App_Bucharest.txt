@@ -1,10 +1,10 @@
-23
+24
 74
 16.07.2017
 Sunday
 5:03
 20:35
-partly cloudy
+mostly clear
 24
 13
 N
@@ -15,7 +15,7 @@ Monday
 20:34
 clear
 27
-14
+13
 N
 3.6
 18.07.2017
@@ -23,26 +23,26 @@ Tuesday
 5:05
 20:34
 mostly clear
-28
-17
-NW
+29
+16
+S
 3.6
 19.07.2017
 Wednesday
 5:06
 20:33
 mostly clear
-31
-18
+32
+17
 S
-3.6
+14.4
 20.07.2017
 Thursday
 5:07
 20:32
 mostly clear
 34
-20
+18
 S
-14.4
+7.2
 Bucharest

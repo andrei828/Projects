@@ -13,10 +13,10 @@ W
 Monday
 5:47
 21:35
-cloudy
-25
+prevailingly cloudy
+24
 15
-N
+NW
 3.6
 18.07.2017
 Tuesday
@@ -24,25 +24,25 @@ Tuesday
 21:34
 prevailingly cloudy
 28
-15
+16
 SE
 14.4
 19.07.2017
 Wednesday
 5:49
 21:33
-prevailingly cloudy
-30
+cloudy
+29
 18
-S
+SW
 14.4
 20.07.2017
 Thursday
 5:50
 21:32
 prevailingly cloudy
-22
-18
-W
+23
+19
+SW
 14.4
 London

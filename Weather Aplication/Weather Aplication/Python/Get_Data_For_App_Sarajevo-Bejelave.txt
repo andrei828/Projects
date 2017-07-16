@@ -1,28 +1,28 @@
-18
-28
+20
+52
 16.07.2017
 Sunday
 5:12
 20:06
 cloudy
 20
-19
+18
 NW
 14.4
 17.07.2017
 Monday
 5:13
 20:06
-cloudy
+prevailingly cloudy
 25
 16
-NE
+N
 14.4
 18.07.2017
 Tuesday
 5:14
 20:05
-partly cloudy
+prevailingly cloudy
 28
 16
 N
@@ -32,17 +32,17 @@ Wednesday
 5:15
 20:04
 clear
-32
+31
 15
-N
-3.6
+E
+0.7200000000000001
 20.07.2017
 Thursday
 5:16
 20:04
-prevailingly cloudy
-33
-19
+mostly clear
+34
+18
 NE
 3.6
 Sarajevo-Bejelave

@@ -649,42 +649,33 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 26
-        ///81
-        ///15.07.2017
-        ///Saturday
-        ///4:45
-        ///19:58
-        ///partly cloudy
-        ///26
-        ///16
-        ///E
-        ///7.2
+        ///   Looks up a localized string similar to 22
+        ///44
         ///16.07.2017
         ///Sunday
         ///4:46
         ///19:57
         ///cloudy
-        ///20
+        ///22
         ///17
-        ///NE
-        ///14.4
+        ///E
+        ///7.2
         ///17.07.2017
         ///Monday
         ///4:47
         ///19:56
         ///prevailingly cloudy
-        ///25
+        ///24
         ///17
-        ///N
-        ///25.2
+        ///NE
+        ///14.4
         ///18.07.2017
         ///Tuesday
         ///4:48
         ///19:56
         ///partly cloudy
-        ///27
-        ///17
+        ///28
+        ///16
         ///NE
         ///7.2
         ///19.07.2017
@@ -692,9 +683,9 @@ namespace Weather_Aplication.Properties {
         ///4:49
         ///19:55
         ///mostly clear
-        ///29
+        ///30
         ///16
-        ///NE
+        ///N
         ///7.2
         ///.
         /// </summary>
@@ -705,17 +696,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///64
-        ///15.07.2017
-        ///Saturday
-        ///5:38
-        ///21:56
-        ///cloudy
-        ///19
-        ///13
-        ///W
-        ///14.4
+        ///   Looks up a localized string similar to 21
+        ///96
         ///16.07.2017
         ///Sunday
         ///5:39
@@ -729,17 +711,17 @@ namespace Weather_Aplication.Properties {
         ///Monday
         ///5:40
         ///21:53
-        ///mostly clear
-        ///20
+        ///prevailingly cloudy
+        ///21
         ///14
         ///NW
-        ///14.4
+        ///7.2
         ///18.07.2017
         ///Tuesday
         ///5:41
         ///21:52
-        ///prevailingly cloudy
-        ///23
+        ///partly cloudy
+        ///24
         ///12
         ///E
         ///14.4
@@ -747,11 +729,20 @@ namespace Weather_Aplication.Properties {
         ///Wednesday
         ///5:43
         ///21:51
-        ///prevailingly cloudy
-        ///30
-        ///18
-        ///S
+        ///partly cloudy
+        ///31
+        ///17
+        ///SE
         ///25.2
+        ///20.07.2017
+        ///Thursday
+        ///5:44
+        ///21:50
+        ///prevailingly cloudy
+        ///22
+        ///18
+        ///SW
+        ///14.4
         ///Amsterdam.
         /// </summary>
         internal static string Get_Data_For_App_Amsterdam {
@@ -761,17 +752,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 31
-        ///36
-        ///15.07.2017
-        ///Saturday
-        ///4:32
-        ///19:16
-        ///mostly clear
-        ///31
-        ///16
-        ///W
-        ///7.2
+        ///   Looks up a localized string similar to 27
+        ///51
         ///16.07.2017
         ///Sunday
         ///4:32
@@ -779,35 +761,44 @@ namespace Weather_Aplication.Properties {
         ///mostly clear
         ///32
         ///17
-        ///SE
-        ///3.6
+        ///S
+        ///14.4
         ///17.07.2017
         ///Monday
         ///4:33
         ///19:15
-        ///clear
-        ///34
+        ///mostly clear
+        ///33
         ///18
-        ///S
+        ///SE
         ///7.2
         ///18.07.2017
         ///Tuesday
         ///4:34
         ///19:14
-        ///clear
+        ///mostly clear
         ///32
         ///18
-        ///SW
+        ///W
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///4:35
         ///19:14
-        ///partly cloudy
-        ///27
+        ///mostly clear
+        ///26
+        ///17
+        ///NW
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:36
+        ///19:13
+        ///prevailingly cloudy
+        ///26
         ///16
         ///N
-        ///14.4
+        ///7.2
         ///Ankara.
         /// </summary>
         internal static string Get_Data_For_App_Ankara {
@@ -817,17 +808,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 31
-        ///40
-        ///15.07.2017
-        ///Saturday
-        ///5:15
-        ///19:47
-        ///clear
+        ///   Looks up a localized string similar to 30
         ///32
-        ///25
-        ///E
-        ///0.7200000000000001
         ///16.07.2017
         ///Sunday
         ///5:16
@@ -836,33 +818,42 @@ namespace Weather_Aplication.Properties {
         ///31
         ///24
         ///N
-        ///7.2
+        ///3.6
         ///17.07.2017
         ///Monday
         ///5:16
         ///19:46
-        ///prevailingly cloudy
+        ///partly cloudy
         ///26
         ///22
         ///NW
-        ///7.2
+        ///14.4
         ///18.07.2017
         ///Tuesday
         ///5:17
         ///19:45
         ///mostly clear
-        ///28
+        ///27
         ///20
         ///N
-        ///14.4
+        ///25.2
         ///19.07.2017
         ///Wednesday
         ///5:18
         ///19:45
         ///clear
-        ///30
+        ///29
         ///22
-        ///None
+        ///N
+        ///25.2
+        ///20.07.2017
+        ///Thursday
+        ///5:19
+        ///19:44
+        ///clear
+        ///30
+        ///23
+        ///N
         ///25.2
         ///Athens.
         /// </summary>
@@ -873,43 +864,34 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 27
-        ///34
-        ///15.07.2017
-        ///Saturday
-        ///5:07
-        ///20:21
-        ///mostly clear
-        ///27
-        ///16
-        ///NW
-        ///7.2
+        ///   Looks up a localized string similar to 24
+        ///71
         ///16.07.2017
         ///Sunday
         ///5:07
         ///20:21
         ///mostly clear
-        ///25
-        ///17
+        ///24
+        ///15
         ///N
         ///14.4
         ///17.07.2017
         ///Monday
         ///5:08
         ///20:20
-        ///partly cloudy
-        ///26
-        ///16
+        ///mostly clear
+        ///27
+        ///15
         ///NE
-        ///7.2
+        ///14.4
         ///18.07.2017
         ///Tuesday
         ///5:09
         ///20:19
-        ///mostly clear
-        ///29
+        ///clear
+        ///30
         ///17
-        ///N
+        ///NE
         ///7.2
         ///19.07.2017
         ///Wednesday
@@ -919,7 +901,16 @@ namespace Weather_Aplication.Properties {
         ///32
         ///18
         ///NE
-        ///3.6
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///5:11
+        ///20:17
+        ///clear
+        ///34
+        ///21
+        ///E
+        ///7.2
         ///Belgrade.
         /// </summary>
         internal static string Get_Data_For_App_Belgrade {
@@ -930,51 +921,51 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 20
-        ///40
-        ///15.07.2017
-        ///Saturday
-        ///5:02
-        ///21:22
-        ///partly cloudy
-        ///20
-        ///11
-        ///NW
-        ///7.2
+        ///80
         ///16.07.2017
         ///Sunday
         ///5:03
         ///21:21
-        ///cloudy
-        ///21
-        ///13
-        ///W
+        ///prevailingly cloudy
+        ///20
+        ///12
+        ///SW
         ///14.4
         ///17.07.2017
         ///Monday
         ///5:05
         ///21:20
         ///prevailingly cloudy
-        ///21
-        ///16
+        ///20
+        ///17
         ///NW
         ///14.4
         ///18.07.2017
         ///Tuesday
         ///5:06
         ///21:19
-        ///partly cloudy
+        ///prevailingly cloudy
         ///23
-        ///13
+        ///11
         ///N
-        ///3.6
+        ///0.7200000000000001
         ///19.07.2017
         ///Wednesday
         ///5:07
         ///21:17
-        ///prevailingly cloudy
-        ///26
+        ///partly cloudy
+        ///27
         ///13
         ///E
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///5:09
+        ///21:16
+        ///cloudy
+        ///30
+        ///18
+        ///S
         ///14.4
         ///Berlin.
         /// </summary>
@@ -985,23 +976,14 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 20
-        ///46
-        ///15.07.2017
-        ///Saturday
-        ///5:07
-        ///20:47
-        ///prevailingly cloudy
-        ///21
-        ///14
-        ///NW
-        ///25.2
+        ///   Looks up a localized string similar to 24
+        ///62
         ///16.07.2017
         ///Sunday
         ///5:08
         ///20:46
-        ///partly cloudy
-        ///24
+        ///prevailingly cloudy
+        ///25
         ///13
         ///N
         ///14.4
@@ -1011,27 +993,36 @@ namespace Weather_Aplication.Properties {
         ///20:45
         ///mostly clear
         ///28
-        ///13
+        ///14
         ///W
         ///7.2
         ///18.07.2017
         ///Tuesday
         ///5:10
         ///20:44
-        ///partly cloudy
-        ///28
-        ///18
-        ///W
-        ///3.6
+        ///mostly clear
+        ///30
+        ///17
+        ///S
+        ///7.2
         ///19.07.2017
         ///Wednesday
         ///5:11
         ///20:43
-        ///mostly clear
+        ///prevailingly cloudy
         ///32
-        ///19
+        ///18
         ///S
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:12
+        ///20:42
+        ///clear
+        ///34
+        ///19
+        ///S
+        ///7.2
         ///Bratislava.
         /// </summary>
         internal static string Get_Data_For_App_Bratislava {
@@ -1041,24 +1032,15 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 26
-        ///81
-        ///15.07.2017
-        ///Saturday
-        ///4:45
-        ///19:58
-        ///partly cloudy
-        ///26
-        ///16
-        ///E
-        ///7.2
+        ///   Looks up a localized string similar to 18
+        ///92
         ///16.07.2017
         ///Sunday
         ///4:46
         ///19:57
         ///cloudy
-        ///20
-        ///17
+        ///18
+        ///16
         ///NE
         ///14.4
         ///17.07.2017
@@ -1067,27 +1049,36 @@ namespace Weather_Aplication.Properties {
         ///19:56
         ///prevailingly cloudy
         ///25
-        ///17
-        ///N
-        ///25.2
+        ///16
+        ///NE
+        ///14.4
         ///18.07.2017
         ///Tuesday
         ///4:48
         ///19:56
         ///partly cloudy
         ///27
-        ///17
+        ///16
         ///NE
-        ///7.2
+        ///14.4
         ///19.07.2017
         ///Wednesday
         ///4:49
         ///19:55
         ///mostly clear
+        ///28
+        ///16
+        ///N
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///4:50
+        ///19:54
+        ///mostly clear
         ///29
         ///16
-        ///NE
-        ///7.2
+        ///N
+        ///3.6
         ///Brussels.
         /// </summary>
         internal static string Get_Data_For_App_Brussels {
@@ -1099,22 +1090,13 @@ namespace Weather_Aplication.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 24
         ///74
-        ///15.07.2017
-        ///Saturday
-        ///5:02
-        ///20:36
-        ///partly cloudy
-        ///24
-        ///16
-        ///NW
-        ///25.2
         ///16.07.2017
         ///Sunday
         ///5:03
         ///20:35
-        ///prevailingly cloudy
-        ///25
-        ///14
+        ///mostly clear
+        ///24
+        ///13
         ///N
         ///14.4
         ///17.07.2017
@@ -1123,15 +1105,15 @@ namespace Weather_Aplication.Properties {
         ///20:34
         ///clear
         ///27
-        ///14
+        ///13
         ///N
-        ///7.2
+        ///3.6
         ///18.07.2017
         ///Tuesday
         ///5:05
         ///20:34
         ///mostly clear
-        ///30
+        ///29
         ///16
         ///S
         ///3.6
@@ -1139,8 +1121,17 @@ namespace Weather_Aplication.Properties {
         ///Wednesday
         ///5:06
         ///20:33
-        ///clear
+        ///mostly clear
         ///32
+        ///17
+        ///S
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:07
+        ///20:32
+        ///mostly clear
+        ///34
         ///18
         ///S
         ///7.2
@@ -1153,26 +1144,17 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 17
-        ///73
-        ///15.07.2017
-        ///Saturday
-        ///4:47
-        ///21:43
-        ///mostly clear
-        ///17
-        ///14
-        ///S
-        ///14.4
+        ///   Looks up a localized string similar to 16
+        ///87
         ///16.07.2017
         ///Sunday
         ///4:48
         ///21:42
         ///cloudy
-        ///17
+        ///18
         ///14
         ///S
-        ///25.2
+        ///32.4
         ///17.07.2017
         ///Monday
         ///4:50
@@ -1180,26 +1162,35 @@ namespace Weather_Aplication.Properties {
         ///partly cloudy
         ///18
         ///13
-        ///NW
+        ///W
         ///25.2
         ///18.07.2017
         ///Tuesday
         ///4:51
         ///21:39
         ///prevailingly cloudy
-        ///19
+        ///18
         ///14
         ///W
-        ///14.4
+        ///25.2
         ///19.07.2017
         ///Wednesday
         ///4:53
         ///21:37
-        ///partly cloudy
-        ///19
+        ///mostly clear
+        ///18
         ///14
         ///S
-        ///25.2
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///4:55
+        ///21:36
+        ///cloudy
+        ///19
+        ///16
+        ///SE
+        ///14.4
         ///Budapest.
         /// </summary>
         internal static string Get_Data_For_App_Budapest {
@@ -1209,26 +1200,17 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 28
-        ///48
-        ///15.07.2017
-        ///Saturday
-        ///7:24
-        ///22:01
-        ///clear
-        ///31
-        ///18
-        ///N
-        ///0.7200000000000001
+        ///   Looks up a localized string similar to 26
+        ///80
         ///16.07.2017
         ///Sunday
         ///7:25
         ///22:00
-        ///mostly clear
+        ///clear
         ///28
         ///19
         ///SW
-        ///7.2
+        ///14.4
         ///17.07.2017
         ///Monday
         ///7:25
@@ -1242,20 +1224,29 @@ namespace Weather_Aplication.Properties {
         ///Tuesday
         ///7:26
         ///21:59
-        ///prevailingly cloudy
+        ///partly cloudy
         ///25
         ///19
         ///NW
-        ///14.4
+        ///7.2
         ///19.07.2017
         ///Wednesday
         ///7:27
         ///21:58
-        ///prevailingly cloudy
+        ///partly cloudy
         ///25
-        ///19
+        ///18
         ///W
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///7:28
+        ///21:58
+        ///partly cloudy
+        ///23
+        ///18
+        ///N
+        ///25.2
         ///Chisinau.
         /// </summary>
         internal static string Get_Data_For_App_Chisinau {
@@ -1265,42 +1256,33 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 20
-        ///68
-        ///15.07.2017
-        ///Saturday
-        ///6:16
-        ///22:46
-        ///cloudy
-        ///24
-        ///16
-        ///SW
-        ///25.2
+        ///   Looks up a localized string similar to 18
+        ///93
         ///16.07.2017
         ///Sunday
         ///6:17
         ///22:44
-        ///cloudy
-        ///18
-        ///15
+        ///prevailingly cloudy
+        ///19
+        ///14
         ///W
         ///14.4
         ///17.07.2017
         ///Monday
         ///6:18
         ///22:43
-        ///partly cloudy
-        ///20
+        ///clear
+        ///22
         ///10
-        ///E
-        ///3.6
+        ///SW
+        ///0.7200000000000001
         ///18.07.2017
         ///Tuesday
         ///6:20
         ///22:42
-        ///cloudy
-        ///18
-        ///13
+        ///mostly clear
+        ///21
+        ///12
         ///SE
         ///14.4
         ///19.07.2017
@@ -1308,10 +1290,19 @@ namespace Weather_Aplication.Properties {
         ///6:21
         ///22:41
         ///cloudy
-        ///18
-        ///14
-        ///NE
-        ///3.6
+        ///21
+        ///15
+        ///SE
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///6:22
+        ///22:39
+        ///prevailingly cloudy
+        ///17
+        ///10
+        ///SW
+        ///14.4
         ///Copenhagen.
         /// </summary>
         internal static string Get_Data_For_App_Copenhagen {
@@ -1321,33 +1312,24 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 20
-        ///48
-        ///15.07.2017
-        ///Saturday
-        ///3:21
-        ///21:30
-        ///prevailingly cloudy
-        ///20
-        ///8
-        ///NW
-        ///7.2
+        ///   Looks up a localized string similar to 22
+        ///52
         ///16.07.2017
         ///Sunday
         ///3:23
         ///21:28
         ///clear
-        ///22
+        ///23
         ///9
-        ///S
-        ///14.4
+        ///SW
+        ///7.2
         ///17.07.2017
         ///Monday
         ///3:25
         ///21:26
         ///prevailingly cloudy
         ///19
-        ///9
+        ///10
         ///SW
         ///14.4
         ///18.07.2017
@@ -1355,17 +1337,26 @@ namespace Weather_Aplication.Properties {
         ///3:27
         ///21:24
         ///partly cloudy
-        ///19
-        ///10
+        ///21
+        ///9
         ///W
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///3:29
         ///21:22
-        ///partly cloudy
-        ///20
+        ///prevailingly cloudy
+        ///18
         ///11
+        ///NW
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///3:31
+        ///21:20
+        ///partly cloudy
+        ///19
+        ///10
         ///NW
         ///14.4
         ///Dublin Airport.
@@ -1377,25 +1368,16 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 20
-        ///65
-        ///15.07.2017
-        ///Saturday
-        ///4:04
-        ///20:03
-        ///prevailingly cloudy
-        ///20
-        ///12
-        ///NW
-        ///14.4
+        ///   Looks up a localized string similar to 22
+        ///59
         ///16.07.2017
         ///Sunday
         ///4:05
         ///20:02
         ///mostly clear
         ///22
-        ///13
-        ///W
+        ///11
+        ///NW
         ///14.4
         ///17.07.2017
         ///Monday
@@ -1403,7 +1385,7 @@ namespace Weather_Aplication.Properties {
         ///20:01
         ///partly cloudy
         ///24
-        ///12
+        ///11
         ///W
         ///7.2
         ///18.07.2017
@@ -1421,9 +1403,18 @@ namespace Weather_Aplication.Properties {
         ///19:59
         ///mostly clear
         ///25
-        ///17
+        ///14
         ///N
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:09
+        ///19:58
+        ///mostly clear
+        ///27
+        ///14
+        ///SE
+        ///7.2
         ///Helsinki.
         /// </summary>
         internal static string Get_Data_For_App_Helsinki {
@@ -1434,52 +1425,52 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 24
-        ///29
-        ///15.07.2017
-        ///Saturday
-        ///4:24
-        ///19:55
-        ///prevailingly cloudy
-        ///24
-        ///12
-        ///W
-        ///7.2
+        ///56
         ///16.07.2017
         ///Sunday
         ///4:25
         ///19:55
         ///prevailingly cloudy
-        ///23
+        ///24
         ///15
-        ///NE
+        ///N
         ///7.2
         ///17.07.2017
         ///Monday
         ///4:26
         ///19:54
-        ///prevailingly cloudy
+        ///cloudy
         ///26
         ///17
         ///N
-        ///14.4
+        ///7.2
         ///18.07.2017
         ///Tuesday
         ///4:27
         ///19:53
-        ///mostly clear
-        ///29
+        ///partly cloudy
+        ///27
         ///14
         ///N
-        ///7.2
+        ///14.4
         ///19.07.2017
         ///Wednesday
         ///4:28
         ///19:52
-        ///mostly clear
-        ///27
+        ///partly cloudy
+        ///29
         ///16
-        ///NW
+        ///N
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:29
+        ///19:51
+        ///mostly clear
+        ///30
+        ///16
+        ///N
+        ///7.2
         ///Kiev.
         /// </summary>
         internal static string Get_Data_For_App_Kiev {
@@ -1490,23 +1481,14 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 23
-        ///51
-        ///15.07.2017
-        ///Saturday
-        ///5:26
-        ///20:50
-        ///partly cloudy
-        ///24
-        ///12
-        ///N
-        ///7.2
+        ///58
         ///16.07.2017
         ///Sunday
         ///5:27
         ///20:49
         ///partly cloudy
-        ///23
-        ///11
+        ///24
+        ///12
         ///NE
         ///14.4
         ///17.07.2017
@@ -1515,7 +1497,7 @@ namespace Weather_Aplication.Properties {
         ///20:48
         ///clear
         ///27
-        ///12
+        ///11
         ///NE
         ///7.2
         ///18.07.2017
@@ -1531,11 +1513,20 @@ namespace Weather_Aplication.Properties {
         ///Wednesday
         ///5:30
         ///20:46
-        ///partly cloudy
+        ///mostly clear
         ///32
         ///15
         ///W
-        ///3.6
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:31
+        ///20:45
+        ///mostly clear
+        ///33
+        ///16
+        ///W
+        ///14.4
         ///Lisbon.
         /// </summary>
         internal static string Get_Data_For_App_Lisbon {
@@ -1545,17 +1536,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 18
-        ///45
-        ///15.07.2017
-        ///Saturday
-        ///6:03
-        ///22:12
-        ///cloudy
-        ///22
-        ///13
-        ///SW
-        ///14.4
+        ///   Looks up a localized string similar to 22
+        ///85
         ///16.07.2017
         ///Sunday
         ///6:04
@@ -1569,16 +1551,16 @@ namespace Weather_Aplication.Properties {
         ///Monday
         ///6:05
         ///22:10
-        ///prevailingly cloudy
+        ///partly cloudy
         ///23
-        ///14
+        ///12
         ///NE
         ///7.2
         ///18.07.2017
         ///Tuesday
         ///6:06
         ///22:09
-        ///cloudy
+        ///prevailingly cloudy
         ///24
         ///14
         ///E
@@ -1587,11 +1569,20 @@ namespace Weather_Aplication.Properties {
         ///Wednesday
         ///6:08
         ///22:08
-        ///prevailingly cloudy
-        ///26
+        ///cloudy
+        ///24
         ///18
         ///S
         ///25.2
+        ///20.07.2017
+        ///Thursday
+        ///6:09
+        ///22:07
+        ///partly cloudy
+        ///21
+        ///17
+        ///W
+        ///14.4
         ///Ljubljana.
         /// </summary>
         internal static string Get_Data_For_App_Ljubljana {
@@ -1601,33 +1592,24 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
+        ///   Looks up a localized string similar to 21
         ///94
-        ///15.07.2017
-        ///Saturday
-        ///5:45
-        ///21:37
-        ///cloudy
-        ///20
-        ///10
-        ///NW
-        ///14.4
         ///16.07.2017
         ///Sunday
         ///5:46
         ///21:36
         ///cloudy
         ///23
-        ///16
-        ///SW
-        ///3.6
+        ///15
+        ///W
+        ///7.2
         ///17.07.2017
         ///Monday
         ///5:47
         ///21:35
         ///prevailingly cloudy
         ///24
-        ///14
+        ///15
         ///NW
         ///3.6
         ///18.07.2017
@@ -1636,17 +1618,26 @@ namespace Weather_Aplication.Properties {
         ///21:34
         ///prevailingly cloudy
         ///28
-        ///15
-        ///E
+        ///16
+        ///SE
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///5:49
         ///21:33
-        ///partly cloudy
-        ///30
+        ///cloudy
+        ///29
         ///18
-        ///S
+        ///SW
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:50
+        ///21:32
+        ///prevailingly cloudy
+        ///23
+        ///19
+        ///SW
         ///14.4
         ///London.
         /// </summary>
@@ -1658,31 +1649,22 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 35
-        ///11
-        ///15.07.2017
-        ///Saturday
-        ///6:57
-        ///21:43
-        ///clear
-        ///37
-        ///20
-        ///SW
-        ///3.6
+        ///54
         ///16.07.2017
         ///Sunday
         ///6:58
         ///21:43
         ///clear
         ///37
-        ///21
+        ///22
         ///S
         ///3.6
         ///17.07.2017
         ///Monday
         ///6:58
         ///21:42
-        ///clear
-        ///36
+        ///prevailingly cloudy
+        ///37
         ///21
         ///S
         ///14.4
@@ -1690,20 +1672,29 @@ namespace Weather_Aplication.Properties {
         ///Tuesday
         ///6:59
         ///21:41
-        ///prevailingly cloudy
+        ///partly cloudy
         ///36
-        ///20
+        ///22
         ///SW
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///7:00
         ///21:41
-        ///clear
-        ///33
-        ///19
+        ///mostly clear
+        ///32
+        ///21
         ///SW
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///7:01
+        ///21:40
+        ///prevailingly cloudy
+        ///32
+        ///20
+        ///SW
+        ///7.2
         ///Luxembourg.
         /// </summary>
         internal static string Get_Data_For_App_Luxembourg {
@@ -1713,17 +1704,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 28
-        ///69
-        ///15.07.2017
-        ///Saturday
-        ///5:57
-        ///20:19
-        ///clear
-        ///28
-        ///25
-        ///NW
-        ///14.4
+        ///   Looks up a localized string similar to 27
+        ///78
         ///16.07.2017
         ///Sunday
         ///5:58
@@ -1731,14 +1713,14 @@ namespace Weather_Aplication.Properties {
         ///mostly clear
         ///28
         ///25
-        ///NE
+        ///E
         ///14.4
         ///17.07.2017
         ///Monday
         ///5:59
         ///20:18
         ///clear
-        ///28
+        ///27
         ///24
         ///N
         ///7.2
@@ -1749,17 +1731,26 @@ namespace Weather_Aplication.Properties {
         ///clear
         ///28
         ///25
-        ///SW
+        ///W
         ///7.2
         ///19.07.2017
         ///Wednesday
         ///6:00
         ///20:16
         ///clear
-        ///28
+        ///27
+        ///25
+        ///SW
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///6:01
+        ///20:16
+        ///clear
+        ///27
         ///25
         ///S
-        ///7.2
+        ///14.4
         ///Madrid.
         /// </summary>
         internal static string Get_Data_For_App_Madrid {
@@ -1769,26 +1760,17 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///57
-        ///15.07.2017
-        ///Saturday
-        ///3:57
-        ///20:33
-        ///cloudy
-        ///19
-        ///10
-        ///N
-        ///14.4
+        ///   Looks up a localized string similar to 15
+        ///73
         ///16.07.2017
         ///Sunday
         ///3:58
         ///20:32
         ///cloudy
-        ///14
-        ///12
+        ///16
+        ///11
         ///NW
-        ///25.2
+        ///14.4
         ///17.07.2017
         ///Monday
         ///4:00
@@ -1804,16 +1786,25 @@ namespace Weather_Aplication.Properties {
         ///20:29
         ///prevailingly cloudy
         ///19
-        ///13
-        ///NW
+        ///11
+        ///W
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///4:03
         ///20:28
-        ///partly cloudy
-        ///19
-        ///11
+        ///prevailingly cloudy
+        ///20
+        ///13
+        ///W
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:04
+        ///20:27
+        ///mostly clear
+        ///22
+        ///12
         ///W
         ///14.4
         ///Malta.
@@ -1825,32 +1816,23 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 24
-        ///96
-        ///15.07.2017
-        ///Saturday
-        ///3:05
-        ///20:03
-        ///prevailingly cloudy
-        ///25
-        ///16
-        ///SE
-        ///25.2
+        ///   Looks up a localized string similar to 23
+        ///70
         ///16.07.2017
         ///Sunday
         ///3:06
         ///20:01
-        ///prevailingly cloudy
+        ///partly cloudy
         ///24
-        ///17
-        ///SE
-        ///14.4
+        ///18
+        ///S
+        ///25.2
         ///17.07.2017
         ///Monday
         ///3:08
         ///20:00
         ///prevailingly cloudy
-        ///19
+        ///20
         ///13
         ///SW
         ///14.4
@@ -1858,7 +1840,7 @@ namespace Weather_Aplication.Properties {
         ///Tuesday
         ///3:09
         ///19:59
-        ///prevailingly cloudy
+        ///partly cloudy
         ///21
         ///12
         ///SW
@@ -1869,9 +1851,18 @@ namespace Weather_Aplication.Properties {
         ///19:57
         ///partly cloudy
         ///20
-        ///14
+        ///12
         ///W
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///3:12
+        ///19:56
+        ///partly cloudy
+        ///20
+        ///12
+        ///W
+        ///7.2
         ///Minsk.
         /// </summary>
         internal static string Get_Data_For_App_Minsk {
@@ -1881,51 +1872,51 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 20
-        ///38
-        ///15.07.2017
-        ///Saturday
-        ///4:18
-        ///22:24
-        ///partly cloudy
-        ///20
-        ///9
-        ///SW
-        ///14.4
+        ///   Looks up a localized string similar to 14
+        ///96
         ///16.07.2017
         ///Sunday
         ///4:20
         ///22:23
         ///prevailingly cloudy
-        ///18
-        ///11
+        ///19
+        ///12
         ///S
-        ///14.4
+        ///7.2
         ///17.07.2017
         ///Monday
         ///4:22
         ///22:21
         ///partly cloudy
         ///19
-        ///8
+        ///9
         ///W
         ///14.4
         ///18.07.2017
         ///Tuesday
         ///4:24
         ///22:19
-        ///prevailingly cloudy
+        ///clear
         ///21
-        ///10
+        ///11
         ///NW
-        ///7.2
+        ///14.4
         ///19.07.2017
         ///Wednesday
         ///4:26
         ///22:17
+        ///mostly clear
+        ///21
+        ///9
+        ///N
+        ///3.6
+        ///20.07.2017
+        ///Thursday
+        ///4:28
+        ///22:15
         ///prevailingly cloudy
-        ///22
-        ///10
+        ///24
+        ///9
         ///S
         ///7.2
         ///Moscow.
@@ -1938,34 +1929,25 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 24
-        ///46
-        ///15.07.2017
-        ///Saturday
-        ///6:04
-        ///21:49
-        ///cloudy
-        ///26
-        ///12
-        ///NW
-        ///7.2
+        ///65
         ///16.07.2017
         ///Sunday
         ///6:05
         ///21:48
-        ///mostly clear
-        ///28
-        ///15
+        ///prevailingly cloudy
+        ///26
+        ///17
         ///NW
-        ///7.2
+        ///14.4
         ///17.07.2017
         ///Monday
         ///6:06
         ///21:47
-        ///partly cloudy
-        ///29
+        ///prevailingly cloudy
+        ///28
         ///16
-        ///NE
-        ///7.2
+        ///N
+        ///3.6
         ///18.07.2017
         ///Tuesday
         ///6:07
@@ -1973,16 +1955,25 @@ namespace Weather_Aplication.Properties {
         ///prevailingly cloudy
         ///32
         ///18
-        ///E
+        ///SE
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///6:08
         ///21:45
-        ///prevailingly cloudy
-        ///30
+        ///cloudy
+        ///29
         ///21
         ///S
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///6:09
+        ///21:44
+        ///prevailingly cloudy
+        ///23
+        ///19
+        ///W
         ///14.4
         ///Oslo.
         /// </summary>
@@ -1993,23 +1984,14 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 32
-        ///31
-        ///15.07.2017
-        ///Saturday
-        ///5:19
-        ///20:18
-        ///mostly clear
-        ///32
-        ///21
-        ///S
-        ///14.4
+        ///   Looks up a localized string similar to 28
+        ///38
         ///16.07.2017
         ///Sunday
         ///5:20
         ///20:17
-        ///mostly clear
-        ///28
+        ///partly cloudy
+        ///29
         ///21
         ///NE
         ///14.4
@@ -2018,26 +2000,35 @@ namespace Weather_Aplication.Properties {
         ///5:21
         ///20:17
         ///mostly clear
-        ///29
+        ///30
         ///18
         ///NE
-        ///25.2
+        ///14.4
         ///18.07.2017
         ///Tuesday
         ///5:22
         ///20:16
         ///clear
         ///32
-        ///18
-        ///SE
+        ///19
+        ///S
         ///14.4
         ///19.07.2017
         ///Wednesday
         ///5:23
         ///20:15
-        ///mostly clear
+        ///clear
         ///34
         ///19
+        ///S
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///5:24
+        ///20:14
+        ///mostly clear
+        ///34
+        ///20
         ///S
         ///7.2
         ///Paris.
@@ -2049,52 +2040,52 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///59
-        ///15.07.2017
-        ///Saturday
-        ///5:10
-        ///21:06
-        ///prevailingly cloudy
-        ///19
-        ///13
-        ///NW
-        ///14.4
+        ///   Looks up a localized string similar to 21
+        ///94
         ///16.07.2017
         ///Sunday
         ///5:11
         ///21:05
         ///prevailingly cloudy
-        ///21
-        ///12
-        ///W
-        ///3.6
+        ///22
+        ///11
+        ///SW
+        ///7.2
         ///17.07.2017
         ///Monday
         ///5:12
         ///21:04
         ///prevailingly cloudy
-        ///24
+        ///23
         ///14
         ///NW
-        ///14.4
+        ///3.6
         ///18.07.2017
         ///Tuesday
         ///5:13
         ///21:03
-        ///partly cloudy
+        ///prevailingly cloudy
         ///24
-        ///12
+        ///15
         ///NE
-        ///7.2
+        ///3.6
         ///19.07.2017
         ///Wednesday
         ///5:14
         ///21:02
-        ///partly cloudy
+        ///prevailingly cloudy
         ///29
         ///15
-        ///E
+        ///W
+        ///0.7200000000000001
+        ///20.07.2017
+        ///Thursday
+        ///5:16
+        ///21:01
+        ///prevailingly cloudy
+        ///32
+        ///18
+        ///S
         ///7.2
         ///Podgorica.
         /// </summary>
@@ -2105,34 +2096,25 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 28
-        ///68
-        ///15.07.2017
-        ///Saturday
-        ///5:49
-        ///20:43
-        ///clear
-        ///29
-        ///23
-        ///S
-        ///7.2
+        ///   Looks up a localized string similar to 30
+        ///32
         ///16.07.2017
         ///Sunday
         ///5:50
         ///20:42
-        ///clear
+        ///mostly clear
         ///30
         ///22
-        ///S
-        ///7.2
+        ///NE
+        ///14.4
         ///17.07.2017
         ///Monday
         ///5:51
         ///20:42
         ///clear
-        ///29
+        ///30
         ///20
-        ///SW
+        ///W
         ///14.4
         ///18.07.2017
         ///Tuesday
@@ -2146,6 +2128,15 @@ namespace Weather_Aplication.Properties {
         ///19.07.2017
         ///Wednesday
         ///5:52
+        ///20:40
+        ///prevailingly cloudy
+        ///28
+        ///21
+        ///W
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:53
         ///20:40
         ///clear
         ///28
@@ -2162,32 +2153,23 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 10
-        ///80
-        ///15.07.2017
-        ///Saturday
-        ///5:42
-        ///1:23
-        ///prevailingly cloudy
-        ///11
-        ///8
-        ///S
-        ///14.4
+        ///91
         ///16.07.2017
         ///Sunday
         ///5:45
         ///1:20
         ///prevailingly cloudy
-        ///11
-        ///6
+        ///10
+        ///7
         ///W
-        ///14.4
+        ///25.2
         ///17.07.2017
         ///Monday
         ///5:48
         ///1:18
         ///cloudy
         ///11
-        ///8
+        ///7
         ///SW
         ///14.4
         ///18.07.2017
@@ -2195,19 +2177,28 @@ namespace Weather_Aplication.Properties {
         ///5:51
         ///1:15
         ///cloudy
-        ///12
+        ///11
         ///10
         ///SE
-        ///7.2
+        ///25.2
         ///19.07.2017
         ///Wednesday
         ///5:54
         ///1:12
-        ///prevailingly cloudy
+        ///cloudy
+        ///12
         ///11
-        ///5
-        ///NW
+        ///W
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:57
+        ///1:09
+        ///cloudy
+        ///12
+        ///8
+        ///SE
+        ///7.2
         ///Pratica Di Mare.
         /// </summary>
         internal static string Get_Data_For_App_Pratica_Di_Mare {
@@ -2217,24 +2208,15 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///62
-        ///15.07.2017
-        ///Saturday
-        ///3:52
-        ///21:06
-        ///cloudy
-        ///19
-        ///11
-        ///N
-        ///14.4
+        ///   Looks up a localized string similar to 18
+        ///82
         ///16.07.2017
         ///Sunday
         ///3:54
         ///21:05
-        ///mostly clear
+        ///prevailingly cloudy
         ///19
-        ///13
+        ///14
         ///NW
         ///14.4
         ///17.07.2017
@@ -2242,28 +2224,37 @@ namespace Weather_Aplication.Properties {
         ///3:55
         ///21:03
         ///prevailingly cloudy
-        ///21
-        ///11
-        ///SW
+        ///20
+        ///12
+        ///W
         ///25.2
         ///18.07.2017
         ///Tuesday
         ///3:57
         ///21:02
-        ///partly cloudy
-        ///20
+        ///prevailingly cloudy
+        ///19
         ///12
         ///W
-        ///14.4
+        ///25.2
         ///19.07.2017
         ///Wednesday
         ///3:59
         ///21:00
+        ///prevailingly cloudy
+        ///20
+        ///12
+        ///SW
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:00
+        ///20:59
         ///mostly clear
         ///21
         ///11
         ///NW
-        ///14.4
+        ///3.6
         ///Reykjavik.
         /// </summary>
         internal static string Get_Data_For_App_Reykjavik {
@@ -2273,17 +2264,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 21
-        ///45
-        ///15.07.2017
-        ///Saturday
-        ///5:18
-        ///20:26
-        ///prevailingly cloudy
-        ///21
-        ///10
-        ///NE
-        ///7.2
+        ///   Looks up a localized string similar to 16
+        ///79
         ///16.07.2017
         ///Sunday
         ///5:19
@@ -2291,15 +2273,15 @@ namespace Weather_Aplication.Properties {
         ///partly cloudy
         ///17
         ///10
-        ///N
+        ///NE
         ///14.4
         ///17.07.2017
         ///Monday
         ///5:20
         ///20:25
-        ///partly cloudy
-        ///20
-        ///10
+        ///clear
+        ///22
+        ///9
         ///NE
         ///14.4
         ///18.07.2017
@@ -2315,10 +2297,19 @@ namespace Weather_Aplication.Properties {
         ///Wednesday
         ///5:22
         ///20:23
-        ///mostly clear
+        ///clear
         ///26
         ///12
-        ///SW
+        ///NW
+        ///3.6
+        ///20.07.2017
+        ///Thursday
+        ///5:22
+        ///20:22
+        ///mostly clear
+        ///28
+        ///16
+        ///W
         ///3.6
         ///Riga.
         /// </summary>
@@ -2329,23 +2320,14 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 32
-        ///26
-        ///15.07.2017
-        ///Saturday
-        ///5:11
-        ///20:07
-        ///mostly clear
-        ///32
-        ///19
-        ///NE
-        ///7.2
+        ///   Looks up a localized string similar to 20
+        ///52
         ///16.07.2017
         ///Sunday
         ///5:12
         ///20:06
         ///cloudy
-        ///19
+        ///20
         ///18
         ///NW
         ///14.4
@@ -2353,8 +2335,8 @@ namespace Weather_Aplication.Properties {
         ///Monday
         ///5:13
         ///20:06
-        ///cloudy
-        ///24
+        ///prevailingly cloudy
+        ///25
         ///16
         ///N
         ///14.4
@@ -2364,7 +2346,7 @@ namespace Weather_Aplication.Properties {
         ///20:05
         ///prevailingly cloudy
         ///28
-        ///15
+        ///16
         ///N
         ///14.4
         ///19.07.2017
@@ -2372,9 +2354,18 @@ namespace Weather_Aplication.Properties {
         ///5:15
         ///20:04
         ///clear
-        ///30
+        ///31
         ///15
-        ///SE
+        ///E
+        ///0.7200000000000001
+        ///20.07.2017
+        ///Thursday
+        ///5:16
+        ///20:04
+        ///mostly clear
+        ///34
+        ///18
+        ///NE
         ///3.6
         ///Sarajevo-Bejelave.
         /// </summary>
@@ -2385,32 +2376,23 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 23
-        ///44
-        ///15.07.2017
-        ///Saturday
-        ///5:02
-        ///20:02
-        ///mostly clear
-        ///24
-        ///14
-        ///N
-        ///7.2
+        ///   Looks up a localized string similar to 14
+        ///73
         ///16.07.2017
         ///Sunday
         ///5:03
         ///20:02
         ///cloudy
         ///15
-        ///15
-        ///NE
-        ///3.6
+        ///14
+        ///N
+        ///7.2
         ///17.07.2017
         ///Monday
         ///5:04
         ///20:01
-        ///cloudy
-        ///15
+        ///prevailingly cloudy
+        ///18
         ///12
         ///NE
         ///7.2
@@ -2418,7 +2400,7 @@ namespace Weather_Aplication.Properties {
         ///Tuesday
         ///5:05
         ///20:00
-        ///partly cloudy
+        ///mostly clear
         ///21
         ///14
         ///NE
@@ -2428,9 +2410,18 @@ namespace Weather_Aplication.Properties {
         ///5:06
         ///20:00
         ///mostly clear
-        ///23
+        ///24
         ///13
         ///NE
+        ///7.2
+        ///20.07.2017
+        ///Thursday
+        ///5:06
+        ///19:59
+        ///clear
+        ///25
+        ///14
+        ///E
         ///7.2
         ///Skopje.
         /// </summary>
@@ -2442,16 +2433,7 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 22
-        ///44
-        ///15.07.2017
-        ///Saturday
-        ///3:58
-        ///21:50
-        ///partly cloudy
-        ///22
-        ///10
-        ///SW
-        ///7.2
+        ///72
         ///16.07.2017
         ///Sunday
         ///4:00
@@ -2466,27 +2448,36 @@ namespace Weather_Aplication.Properties {
         ///4:02
         ///21:46
         ///mostly clear
-        ///22
-        ///12
+        ///21
+        ///13
         ///W
-        ///14.4
+        ///25.2
         ///18.07.2017
         ///Tuesday
         ///4:04
         ///21:44
         ///partly cloudy
         ///21
-        ///13
-        ///W
-        ///7.2
+        ///12
+        ///NW
+        ///14.4
         ///19.07.2017
         ///Wednesday
         ///4:06
         ///21:42
+        ///mostly clear
+        ///22
+        ///12
+        ///W
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:08
+        ///21:41
         ///partly cloudy
-        ///24
-        ///13
-        ///NW
+        ///22
+        ///11
+        ///E
         ///14.4
         ///Sofia.
         /// </summary>
@@ -2497,17 +2488,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///72
-        ///15.07.2017
-        ///Saturday
-        ///3:33
-        ///21:23
-        ///prevailingly cloudy
-        ///19
-        ///8
-        ///NW
-        ///14.4
+        ///   Looks up a localized string similar to 21
+        ///60
         ///16.07.2017
         ///Sunday
         ///3:35
@@ -2515,15 +2497,15 @@ namespace Weather_Aplication.Properties {
         ///clear
         ///21
         ///10
-        ///N
-        ///14.4
+        ///NW
+        ///7.2
         ///17.07.2017
         ///Monday
         ///3:37
         ///21:19
         ///prevailingly cloudy
-        ///19
-        ///10
+        ///18
+        ///11
         ///W
         ///14.4
         ///18.07.2017
@@ -2531,18 +2513,27 @@ namespace Weather_Aplication.Properties {
         ///3:39
         ///21:17
         ///mostly clear
-        ///19
-        ///10
+        ///20
+        ///12
         ///W
-        ///14.4
+        ///25.2
         ///19.07.2017
         ///Wednesday
         ///3:41
         ///21:16
         ///mostly clear
         ///18
-        ///12
+        ///11
         ///NW
+        ///25.2
+        ///20.07.2017
+        ///Thursday
+        ///3:43
+        ///21:14
+        ///prevailingly cloudy
+        ///18
+        ///12
+        ///W
         ///14.4
         ///Stockholm.
         /// </summary>
@@ -2553,40 +2544,31 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 32
-        ///64
-        ///15.07.2017
-        ///Saturday
-        ///5:21
-        ///20:13
-        ///clear
-        ///32
-        ///21
-        ///NW
-        ///14.4
+        ///   Looks up a localized string similar to 25
+        ///57
         ///16.07.2017
         ///Sunday
         ///5:21
         ///20:12
         ///prevailingly cloudy
-        ///28
+        ///27
         ///20
         ///NE
-        ///3.6
+        ///7.2
         ///17.07.2017
         ///Monday
         ///5:22
         ///20:11
         ///prevailingly cloudy
-        ///29
+        ///30
         ///17
-        ///N
+        ///E
         ///7.2
         ///18.07.2017
         ///Tuesday
         ///5:23
         ///20:11
-        ///clear
+        ///mostly clear
         ///30
         ///16
         ///NW
@@ -2600,6 +2582,15 @@ namespace Weather_Aplication.Properties {
         ///18
         ///NW
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:25
+        ///20:09
+        ///clear
+        ///32
+        ///20
+        ///NW
+        ///14.4
         ///Tallinn.
         /// </summary>
         internal static string Get_Data_For_App_Tallinn {
@@ -2609,26 +2600,17 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 14
-        ///82
-        ///15.07.2017
-        ///Saturday
-        ///5:42
-        ///21:14
-        ///prevailingly cloudy
-        ///14
-        ///9
-        ///NE
-        ///3.6
+        ///   Looks up a localized string similar to 18
+        ///74
         ///16.07.2017
         ///Sunday
         ///5:43
         ///21:13
-        ///prevailingly cloudy
+        ///partly cloudy
         ///18
-        ///7
-        ///NE
-        ///3.6
+        ///10
+        ///N
+        ///7.2
         ///17.07.2017
         ///Monday
         ///5:44
@@ -2643,7 +2625,7 @@ namespace Weather_Aplication.Properties {
         ///5:45
         ///21:11
         ///prevailingly cloudy
-        ///23
+        ///24
         ///12
         ///N
         ///3.6
@@ -2655,7 +2637,16 @@ namespace Weather_Aplication.Properties {
         ///26
         ///12
         ///S
-        ///0.7200000000000001
+        ///3.6
+        ///20.07.2017
+        ///Thursday
+        ///5:47
+        ///21:09
+        ///cloudy
+        ///22
+        ///13
+        ///N
+        ///3.6
         ///Tirana.
         /// </summary>
         internal static string Get_Data_For_App_Tirana {
@@ -2665,23 +2656,14 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///45
-        ///15.07.2017
-        ///Saturday
-        ///5:10
-        ///20:51
-        ///prevailingly cloudy
-        ///21
-        ///14
-        ///NW
-        ///25.2
+        ///   Looks up a localized string similar to 23
+        ///67
         ///16.07.2017
         ///Sunday
         ///5:11
         ///20:50
-        ///prevailingly cloudy
-        ///23
+        ///partly cloudy
+        ///24
         ///13
         ///N
         ///14.4
@@ -2689,7 +2671,7 @@ namespace Weather_Aplication.Properties {
         ///Monday
         ///5:12
         ///20:49
-        ///partly cloudy
+        ///mostly clear
         ///27
         ///14
         ///NW
@@ -2699,19 +2681,28 @@ namespace Weather_Aplication.Properties {
         ///5:13
         ///20:48
         ///mostly clear
-        ///27
-        ///17
-        ///NE
-        ///3.6
+        ///29
+        ///16
+        ///SE
+        ///14.4
         ///19.07.2017
         ///Wednesday
         ///5:14
         ///20:47
-        ///prevailingly cloudy
+        ///partly cloudy
         ///32
-        ///17
+        ///19
+        ///S
+        ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///5:15
+        ///20:46
+        ///mostly clear
+        ///33
+        ///19
         ///SE
-        ///25.2
+        ///7.2
         ///Vaduz.
         /// </summary>
         internal static string Get_Data_For_App_Vaduz {
@@ -2722,40 +2713,31 @@ namespace Weather_Aplication.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 19
-        ///51
-        ///15.07.2017
-        ///Saturday
-        ///4:03
-        ///20:47
-        ///cloudy
-        ///20
-        ///11
-        ///N
-        ///14.4
+        ///75
         ///16.07.2017
         ///Sunday
         ///4:05
         ///20:46
         ///cloudy
         ///19
-        ///12
+        ///11
         ///NW
         ///14.4
         ///17.07.2017
         ///Monday
         ///4:06
         ///20:45
-        ///cloudy
-        ///19
-        ///12
+        ///prevailingly cloudy
+        ///18
+        ///11
         ///SW
         ///14.4
         ///18.07.2017
         ///Tuesday
         ///4:07
         ///20:43
-        ///partly cloudy
-        ///19
+        ///prevailingly cloudy
+        ///18
         ///10
         ///W
         ///14.4
@@ -2763,11 +2745,20 @@ namespace Weather_Aplication.Properties {
         ///Wednesday
         ///4:09
         ///20:42
-        ///partly cloudy
+        ///prevailingly cloudy
         ///20
-        ///10
-        ///NW
+        ///11
+        ///W
         ///14.4
+        ///20.07.2017
+        ///Thursday
+        ///4:10
+        ///20:41
+        ///partly cloudy
+        ///22
+        ///10
+        ///W
+        ///7.2
         ///Vienna.
         /// </summary>
         internal static string Get_Data_For_App_Vienna {
@@ -2777,17 +2768,8 @@ namespace Weather_Aplication.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 19
-        ///55
-        ///15.07.2017
-        ///Saturday
-        ///4:33
-        ///20:50
-        ///cloudy
-        ///20
-        ///13
-        ///N
-        ///7.2
+        ///   Looks up a localized string similar to 21
+        ///68
         ///16.07.2017
         ///Sunday
         ///4:35
@@ -2796,34 +2778,43 @@ namespace Weather_Aplication.Properties {
         ///21
         ///10
         ///NW
-        ///14.4
+        ///7.2
         ///17.07.2017
         ///Monday
         ///4:36
         ///20:48
         ///cloudy
-        ///19
+        ///20
         ///15
-        ///SW
+        ///W
         ///14.4
         ///18.07.2017
         ///Tuesday
         ///4:37
         ///20:47
         ///prevailingly cloudy
-        ///20
-        ///13
-        ///NW
-        ///14.4
+        ///21
+        ///11
+        ///W
+        ///7.2
         ///19.07.2017
         ///Wednesday
         ///4:38
         ///20:46
         ///mostly clear
-        ///24
-        ///13
-        ///NE
-        ///7.2
+        ///25
+        ///11
+        ///SE
+        ///3.6
+        ///20.07.2017
+        ///Thursday
+        ///4:40
+        ///20:44
+        ///mostly clear
+        ///29
+        ///15
+        ///SE
+        ///3.6
         ///Vilnius.
         /// </summary>
         internal static string Get_Data_For_App_Vilnius {

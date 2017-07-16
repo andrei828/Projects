@@ -1,5 +1,5 @@
-26
-36
+25
+57
 16.07.2017
 Sunday
 5:21
@@ -14,10 +14,10 @@ Monday
 5:22
 20:11
 prevailingly cloudy
-29
+30
 17
-N
-14.4
+E
+7.2
 18.07.2017
 Tuesday
 5:23
@@ -31,7 +31,7 @@ NW
 Wednesday
 5:24
 20:10
-clear
+mostly clear
 31
 18
 NW
@@ -40,7 +40,7 @@ NW
 Thursday
 5:25
 20:09
-mostly clear
+clear
 32
 20
 NW

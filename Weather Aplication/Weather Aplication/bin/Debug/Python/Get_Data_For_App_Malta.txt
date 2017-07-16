@@ -1,14 +1,14 @@
-17
-40
+15
+73
 16.07.2017
 Sunday
 3:58
 20:32
 cloudy
-17
-12
+16
+11
 NW
-25.2
+14.4
 17.07.2017
 Monday
 4:00
@@ -16,7 +16,7 @@ Monday
 prevailingly cloudy
 20
 12
-W
+SW
 14.4
 18.07.2017
 Tuesday
@@ -24,24 +24,24 @@ Tuesday
 20:29
 prevailingly cloudy
 19
-12
+11
 W
 14.4
 19.07.2017
 Wednesday
 4:03
 20:28
-partly cloudy
-19
-11
+prevailingly cloudy
+20
+13
 W
 14.4
 20.07.2017
 Thursday
 4:04
 20:27
-prevailingly cloudy
-23
+mostly clear
+22
 12
 W
 14.4

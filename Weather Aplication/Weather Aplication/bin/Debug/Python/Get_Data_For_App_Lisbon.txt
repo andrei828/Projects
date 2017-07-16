@@ -1,12 +1,12 @@
 23
-37
+42
 16.07.2017
 Sunday
 5:27
 20:49
-mostly clear
+partly cloudy
 24
-11
+12
 NE
 14.4
 17.07.2017
@@ -15,14 +15,14 @@ Monday
 20:48
 clear
 27
-12
+11
 NE
-3.6
+7.2
 18.07.2017
 Tuesday
 5:29
 20:47
-mostly clear
+clear
 30
 14
 E
@@ -31,18 +31,18 @@ E
 Wednesday
 5:30
 20:46
-partly cloudy
-31
-16
+mostly clear
+32
+15
 W
-7.2
+14.4
 20.07.2017
 Thursday
 5:31
 20:45
-prevailingly cloudy
-32
+mostly clear
+33
 16
-SW
+W
 14.4
 Lisbon

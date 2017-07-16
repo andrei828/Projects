@@ -32,7 +32,7 @@
         <BitmapImage x:Key="storm_d" UriSource="./Pictures/Backgrounds/storm_d.jpg" />
         <BitmapImage x:Key="storm_n" UriSource="./Pictures/Backgrounds/storm_n.jpg" />
     </Window.Resources>
-    
+
     <Grid>
 
         <Grid.RowDefinitions>
@@ -43,6 +43,7 @@
         <Grid.Background>
             <ImageBrush x:Name="back_image" ImageSource="{StaticResource ResourceKey=bg_evening}" Opacity="1" />
         </Grid.Background>
+        
 
         <Grid Grid.Row="0">
 

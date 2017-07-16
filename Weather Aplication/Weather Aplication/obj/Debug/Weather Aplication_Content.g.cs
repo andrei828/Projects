@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("batch.bat")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("get_data_for_app.txt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("python/get_data_for_app_vilnius.txt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("python/get_data_for_app_vienna.txt")]

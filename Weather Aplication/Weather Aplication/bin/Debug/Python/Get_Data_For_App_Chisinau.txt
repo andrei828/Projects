@@ -1,5 +1,5 @@
 26
-36
+80
 16.07.2017
 Sunday
 7:25
@@ -8,7 +8,7 @@ clear
 28
 19
 SW
-7.2
+14.4
 17.07.2017
 Monday
 7:25
@@ -22,11 +22,11 @@ SW
 Tuesday
 7:26
 21:59
-prevailingly cloudy
+partly cloudy
 25
 19
 NW
-14.4
+7.2
 19.07.2017
 Wednesday
 7:27
@@ -34,15 +34,15 @@ Wednesday
 partly cloudy
 25
 18
-NW
+W
 14.4
 20.07.2017
 Thursday
 7:28
 21:58
-clear
+partly cloudy
 23
-17
+18
 N
 25.2
 Chisinau
