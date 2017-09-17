@@ -1,0 +1,34 @@
+.container-fluid {
+	margin:auto;
+	max-width: 1000px;
+	background-color: aliceblue;
+}
+
+.page-header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header {
+	display: inline;
+	margin: 0 auto;
+}
+
+.navbar {
+	border: 0;
+}
+
+.active {
+	color: blue;
+}
+
+.jumbotron {
+	box-shadow: -10px 10px 5px #888888;
+	margin-top: 3%;
+}
+
+.row {
+	background-color: lavenderblush;
+	box-shadow: -5px 5px 5px #888888;
+	margin-bottom: 5%;
+}

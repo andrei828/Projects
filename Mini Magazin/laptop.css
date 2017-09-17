@@ -1,0 +1,27 @@
+.container-fluid {
+	margin:auto;
+	max-width: 1000px;
+	background-color: aliceblue;
+}
+
+.page-header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header {
+	display: inline;
+	margin: 0 auto;
+}
+
+.navbar {
+	border: 0;
+}
+
+.active {
+	color: blue;
+}
+
+.inline {
+	display: inline-block;
+}
