@@ -22,7 +22,7 @@ function getLaptops()
 	laptops = [];
 	
 	laptop1 = {
-		img_link: "images/laptops.P1.png",
+		img_link: "images/laptops/L1.jpg",
 		img_size: "65%", 
 		specs: ["Procesor", "RAM", "Memorie SSD", "Rezolutie ecran"],
 		price: 2300,
@@ -30,7 +30,7 @@ function getLaptops()
 	};
 	
 	laptop2 = {
-		img_link: "images/laptops.P2.png",
+		img_link: "images/laptops/L2.png",
 		img_size: "65%", 
 		specs: ["Procesor", "RAM", "Memorie SSD", "Rezolutie ecran"],
 		price: 3100,
@@ -47,15 +47,30 @@ function writeRows()
 {
 	data = getLaptops();
 	
-	var sample = document.getElementsByClassName("test");
+	var sample = document.getElementsByClassName("container-fluid test")[0];
+
+
 	for (laptop of data)
 	{
+		// create row
 		var row = document.createElement("div");
 		row.className = "row";
-		var col = document.createElement("div");
-		col.appendChild(laptop[0]);
-		row.push(col);
-		sample.push(row);
-	}
 		
+		// create col
+		var col = document.createElement("div");
+		col.className = "col-sm-3";
+		col.innerHTML = "<center>";
+		
+		// create img
+		var img = document.createElement("IMG");
+		img.setAttribute("src", laptop.img_link);
+		img.setAttribute("width", laptop.img_size);
+
+		// append img
+		col.appendChild(img);
+
+		row.appendChild(col);
+		sample.appendChild(row);
+		console.log("Finish");
+	}	
 }
