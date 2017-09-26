@@ -41,14 +41,14 @@ for (forecast_link, observation_link) in XML_Links.Data:
 		file_out.write(Humidity+'\n')
 		# XML file iteration
 		for Data in Iter:
-			file_out.write(Data.find('valid').text.split(' ')[0]+'\n')			# Date
+			file_out.write(Data.find('valid').text.split(' ')[0]+'\n')		# Date
 			file_out.write(Data.find('valid_day').text.split(' ')[0]+'\n')		# Week Date
 			file_out.write(Data.find('sunrise').text.split(' ')[1]+'\n')		# Sunrise 
-			file_out.write(Data.find('sunset').text.split(' ')[1]+'\n')			# Sunset
-			file_out.write(Data.find('nn_shortText').text+'\n')					# Weather type
-			file_out.write(Data.find('txsyn').text+'\n')						# Max temperature
-			file_out.write(Data.find('tnsyn').text+'\n')						# Min Temperature
-			file_out.write(str(Data.find('dd_shortText').text)+'\n')			# Wind direction
+			file_out.write(Data.find('sunset').text.split(' ')[1]+'\n')		# Sunset
+			file_out.write(Data.find('nn_shortText').text+'\n')			# Weather type
+			file_out.write(Data.find('txsyn').text+'\n')				# Max temperature
+			file_out.write(Data.find('tnsyn').text+'\n')				# Min Temperature
+			file_out.write(str(Data.find('dd_shortText').text)+'\n')		# Wind direction
 			file_out.write(str(float(Data.find('ff_value').text) * 3.6)+'\n')	# Wind speed
 		file_out.write(XML_Links.Cities[k])
 	k += 1
