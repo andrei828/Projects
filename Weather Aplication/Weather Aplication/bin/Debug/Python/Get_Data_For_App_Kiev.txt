@@ -1,0 +1,48 @@
+24
+56
+16.07.2017
+Sunday
+4:25
+19:55
+prevailingly cloudy
+24
+15
+N
+7.2
+17.07.2017
+Monday
+4:26
+19:54
+cloudy
+26
+17
+N
+7.2
+18.07.2017
+Tuesday
+4:27
+19:53
+partly cloudy
+27
+14
+N
+14.4
+19.07.2017
+Wednesday
+4:28
+19:52
+partly cloudy
+29
+16
+N
+14.4
+20.07.2017
+Thursday
+4:29
+19:51
+mostly clear
+30
+16
+N
+7.2
+Kiev
