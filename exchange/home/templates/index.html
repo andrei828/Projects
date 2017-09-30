@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exchange</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.container {
+				margin-top: 3%;
+				max-width: 2000px;
+			}
+			.jumbotron {
+				box-shadow: 10px 5px 5px #888888;	
+			}
+			.form-control {
+				text-align: center;	
+			}
+			li {
+				text-align: center;	
+			}
+			.btn{
+ 				width: 100%;
+			}
+		</style>
+		
+		<script>
+			function setChangeFrom(e)
+			{
+				document.getElementById("first-button").textContent = e;	
+			}
+			
+			function setChangeTo(e)
+			{
+				document.getElementById("second-button").textContent = e;
+			}
+			
+			function test()
+			{
+				var txt = document.getElementById("value").value;
+				if (!isNaN(parseInt(txt)))
+					console.log(txt);
+			}
+		</script>
+	</head>
+	
+	<body>
+		<center>
+		<div class="container">
+			<center>
+				<div class="jumbotron">
+					<center>
+					<h1 style="text-shadow: 5px 2px 1px #888888;">Exchange calculator</h1>      
+    				<p>This website is dedicated to exchange currencies around the world and uses the real monetary values from national banks</p>
+					</center>
+  				</div>
+				
+				<div class="row">
+    				<!-- change from div -->
+					<div class="col-sm-2">
+						<div class="dropdown changeFrom">
+							<button class="btn btn-primary dropdown-toggle" id="first-button" type="button" data-toggle="dropdown">Choose currency
+    						<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								{% for key, value in Currencies.items %}
+								<li id="{{key}}" onclick="setChangeFrom('{{key}}')"><a href="#">{{key}}</a></li>
+								{% endfor %}
+    						</ul>
+  						</div>
+					</div>
+					
+					<!-- input div -->
+    				<div class="col-sm-8">
+						<input type="number" min="0" class="form-control" id="value" onkeyup="test()">
+					</div>
+				
+					<!-- change to div -->
+					<div class="col-sm-2">
+						<div class="dropdown changeTo" >
+							<button class="btn btn-primary dropdown-toggle" id="second-button" type="button" data-toggle="dropdown">Choose currency
+    						<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								{% for key, value in Currencies.items %}
+								<li id="{{key}}" onclick="setChangeTo('{{key}}')"><a href="#">{{key}}</a></li>
+								{% endfor %}
+    						</ul>
+  						</div>
+					</div>
+				</div>
+				
+				<div class="result">
+					
+				</div>
+			</center>
+		</div>
+		</center>
+	</body>
+</html>
