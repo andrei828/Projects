@@ -166,8 +166,8 @@ namespace Weather_Aplication
             string day_4 = lines[39].Trim(new Char[] { '(', '\'', ')' });
             Next_day_4.Content = day_4.Replace("\'", "");
 
-            Next_day_4_Temp_Max.Content = lines[43] + "°C";
-            Next_day_4_Temp_Min.Content = lines[44] + "°C";
+            Next_day_4_Temp_Max.Content = lines[33] + "°C";
+            Next_day_4_Temp_Min.Content = lines[34] + "°C";
 
             string status = lines[42];
             if (status == "mostly clear" || status == "clear")

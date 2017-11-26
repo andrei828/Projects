@@ -1,48 +1,39 @@
-27
-51
-16.07.2017
+10
+49
+26.11.2017
 Sunday
-4:32
-19:16
-mostly clear
-32
-17
-S
-14.4
-17.07.2017
+5:46
+15:25
+clear
+10
+-2
+SW
+10.8
+27.11.2017
 Monday
-4:33
-19:15
-mostly clear
-33
-18
-SE
-7.2
-18.07.2017
-Tuesday
-4:34
-19:14
-mostly clear
-32
-18
-W
-14.4
-19.07.2017
-Wednesday
-4:35
-19:14
-mostly clear
-26
-17
-NW
-14.4
-20.07.2017
-Thursday
-4:36
-19:13
+5:47
+15:24
 prevailingly cloudy
-26
-16
-N
-7.2
+11
+0
+S
+10.8
+28.11.2017
+Tuesday
+5:48
+15:24
+prevailingly cloudy
+8
+5
+S
+10.8
+29.11.2017
+Wednesday
+5:49
+15:24
+partly cloudy
+6
+2
+SW
+10.8
 Ankara

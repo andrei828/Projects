@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Release\
 Weather_Aplication
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\App.xaml
 31870976723
 41-1768856827
@@ -16,5 +16,5 @@ C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\App
 14-1001767708
 About.xaml;Main App.xaml;MainWindow.xaml;
 
-False
+True
 
