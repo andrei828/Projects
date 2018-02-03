@@ -1,4 +1,3 @@
-# http://meteo.arso.gov.si/met/en/service/
 from html.parser import HTMLParser
 try:
 	from urllib.request import urlopen
@@ -45,3 +44,4 @@ with open('Cities.txt') as file_in:
 	finder = GetXMLLinks(Cities, 'http://meteo.arso.gov.si')
 	finder.feed(html)
 	Data = finder.get_Data_Links()
+	print(Data)

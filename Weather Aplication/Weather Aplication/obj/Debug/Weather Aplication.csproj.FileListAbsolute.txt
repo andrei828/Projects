@@ -250,3 +250,62 @@ C:\Users\User\Desktop\GIT\Projects\Weather Aplication\Weather Aplication\obj\Deb
 C:\Users\User\Desktop\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication.pdb
 C:\Users\User\Desktop\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Cities.txt
 C:\Users\User\Desktop\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Batch.bat
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Get_Data_For_App.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Vilnius.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Vienna.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Vaduz.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Tirana.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Tallinn.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Stockholm.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Sofia.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Skopje.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Sarajevo-Bejelave.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Riga.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Reykjavik.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Pratica Di Mare.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Praha-Libus.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Podgorica.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Paris.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Oslo.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Moscow.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Minsk.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Malta.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Madrid.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Luxembourg.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_London.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Ljubljana.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Lisbon.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Kiev.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Helsinki.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Dublin Airport.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Copenhagen.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Chisinau.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Budapest.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Bucharest.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Brussels.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Bratislava.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Berlin.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Belgrade.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Athens.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Ankara.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Get_Data_For_App_Amsterdam.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Python\Cities.txt
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Batch.bat
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Weather Aplication.exe.config
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Weather Aplication.exe
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\bin\Debug\Weather Aplication.pdb
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\About.g.cs
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Main App.g.cs
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\MainWindow.g.cs
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\App.g.cs
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication_Content.g.cs
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication_MarkupCompile.cache
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication_MarkupCompile.lref
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\About.baml
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Main App.baml
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\MainWindow.baml
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication.g.resources
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather_Aplication.Properties.Resources.resources
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication.csproj.GenerateResource.Cache
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication.exe
+C:\Users\Andrei\Documents\GIT\Projects\Weather Aplication\Weather Aplication\obj\Debug\Weather Aplication.pdb

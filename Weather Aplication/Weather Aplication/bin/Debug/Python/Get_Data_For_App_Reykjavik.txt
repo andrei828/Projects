@@ -1,48 +1,39 @@
-18
-82
-16.07.2017
+5
+89
+26.11.2017
 Sunday
-3:54
-21:05
-prevailingly cloudy
-19
-14
-NW
-14.4
-17.07.2017
-Monday
-3:55
-21:03
-prevailingly cloudy
-20
-12
-W
-25.2
-18.07.2017
-Tuesday
-3:57
-21:02
-prevailingly cloudy
-19
-12
-W
-25.2
-19.07.2017
-Wednesday
-3:59
-21:00
-prevailingly cloudy
-20
-12
+7:28
+14:54
+partly cloudy
+7
+4
 SW
-14.4
-20.07.2017
-Thursday
-4:00
-20:59
-mostly clear
-21
-11
-NW
-3.6
+10.8
+27.11.2017
+Monday
+7:29
+14:53
+partly cloudy
+4
+0
+S
+27.0
+28.11.2017
+Tuesday
+7:31
+14:52
+cloudy
+2
+0
+S
+27.0
+29.11.2017
+Wednesday
+7:33
+14:51
+cloudy
+3
+-2
+S
+27.0
 Reykjavik
