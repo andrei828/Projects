@@ -1,0 +1,82 @@
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+
+div.pos{
+  position: absolute;
+    left: 18%;
+    top:  60%;
+}
+
+button.login {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #46687d);
+  background-image: -moz-linear-gradient(top, #ffffff, #46687d);
+  background-image: -ms-linear-gradient(top, #ffffff, #46687d);
+  background-image: -o-linear-gradient(top, #ffffff, #46687d);
+  background-image: linear-gradient(to bottom, #ffffff, #46687d);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  text-decoration: none;
+  margin-right: 45px
+}
+
+button.login:hover {
+  background: #46687d;
+  background-image: -webkit-linear-gradient(top, #46687d, #ffffff);
+  background-image: -moz-linear-gradient(top, #46687d, #ffffff);
+  background-image: -ms-linear-gradient(top, #46687d, #ffffff);
+  background-image: -o-linear-gradient(top, #46687d, #ffffff);
+  background-image: linear-gradient(to bottom, #46687d, #ffffff);
+  text-decoration: none;
+}
+
+button.login:focus {
+    outline-width: 0;
+}
+
+button.register {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #467d6b);
+  background-image: -moz-linear-gradient(top, #ffffff, #467d6b);
+  background-image: -ms-linear-gradient(top, #ffffff, #467d6b);
+  background-image: -o-linear-gradient(top, #ffffff, #467d6b);
+  background-image: linear-gradient(to bottom, #ffffff, #467d6b);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  text-decoration: none;
+}
+
+button.register:hover {
+  background: #467d6b;
+  background-image: -webkit-linear-gradient(top, #467d6b, #ffffff);
+  background-image: -moz-linear-gradient(top, #467d6b, #ffffff);
+  background-image: -ms-linear-gradient(top, #467d6b, #ffffff);
+  background-image: -o-linear-gradient(top, #467d6b, #ffffff);
+  background-image: linear-gradient(to bottom, #467d6b, #ffffff);
+  text-decoration: none;
+}
+
+button.register:focus {
+    outline-width: 0;
+}
+
+
+.modal-background {
+   background-color: red;
+}
+
