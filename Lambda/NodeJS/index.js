@@ -19,19 +19,22 @@ router.get('/help', functionality.help);
 router.get('/register', functionality.register);
 router.get('/login', functionality.login);
 
-router.get('/todo/list', functionality.listTodos);
 router.get('/user/list', functionality.listUsers);
-router.get('/note/list', functionality.listNotes);
 router.get('/event/list', functionality.listEvents);
+router.get('/todo/list', functionality.listTodos);
+router.get('/todoitem/list', functionality.listTodoItems);
+router.get('/note/list', functionality.listNotes);
 
 router.get('/user/add', functionality.addUser);
 router.get('/event/add', functionality.addEvent);
 router.get('/todo/add', functionality.addTodo);
+router.get('/todoitem/add', functionality.addTodoItem);
 router.get('/note/add', functionality.addNote);
 
-router.get('/todo/remove', functionality.removeTodo);
 router.get('/user/remove', functionality.removeUser);
 router.get('/event/remove', functionality.removeEvent);
+router.get('/todo/remove', functionality.removeTodo);
+router.get('/todoitem/remove', functionality.removeTodoItem);
 router.get('/note/remove', functionality.removeNote);
 
 

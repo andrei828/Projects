@@ -6,10 +6,17 @@ body {
   background-size: cover;
 }
 
+#Login_1, #Register_1 {
+  transform: scale(1.5);
+  border-radius: 15px;
+  margin-right: 5%;
+}
+
 div.pos{
   position: absolute;
-    left: 18%;
-    top:  60%;
+  width: 15%;
+  left: 18%;
+  top:  60%;
 }
 
 button.login {

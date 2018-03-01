@@ -32,15 +32,6 @@ var getUserByName = function(name) {
 	return undefined
 }
 
-var getUser = function(name, pass) {
-	for (user of users) {
-		if (user.name == name && user.pass == pass) {
-			return user
-		}
-	}
-	return undefined
-}
-
 var generateToken = function()
 {
 	token = ""
@@ -131,23 +122,35 @@ functionality.register = function(req, res) {
 	setCORSHeaders(res)
 
 	if (req.query.name == null || req.query.name == undefined || req.query.pass == null || req.query.pass == undefined) {
-		res.json("Invalid login (bad username or password)")
+		res.json("Invalid register (bad username or password)")
 		return 
 	}
 
-	new_user = getUser(req.query.name, req.query.pass)
 	
-
-	if (new_user == undefined) {
-		// add to database
-		new_user = {
-			id: nextUserId++,
-			name: req.query.name,
-			password: req.query.pass,
-			email: req.query.email
-		}
-		users.push(new_user)
+	new_user = {
+		name: req.query.name,
+		pass: req.query.pass,
+		email: req.query.email
 	}
+	
+	var printAndReturn = function(err, rows) {
+		if(rows != undefined && rows.length > 0) {
+			res.json("Username already taken")
+			return
+		}
+
+	}
+
+	sqlservice.getUserForRegister(printAndReturn, req.query.name)
+
+	var addAndReturn = function(errs, rrows) {
+		console.log(rrows)
+		tkn = generateToken()
+		tokens[tkn] = rrows[0].id
+		res.json(tkn)
+	}
+		
+	sqlservice.addUser(addAndReturn, new_user)
 }
 
 functionality.login = function(req, res) {
@@ -159,16 +162,17 @@ functionality.login = function(req, res) {
 		return
 	}
 
-	usr = getUser(req.query.name, req.query.pass)
+	var printAndReturn = function(err, rows) {
+		if (rows == undefined || rows.length < 1) 
+    		res.json("No such user in the database")
+    	else {
+			tkn = generateToken()
+			tokens[tkn] = rows[0].id
+			res.json(tkn)
+		}
+	}
 
-	if (usr == undefined) {
-		res.json("No such user in the database")
-	}
-	else {
-		tkn = generateToken()
-		tokens[tkn] = usr
-		res.json(tkn)
-	}
+	sqlservice.getUserForLogin(printAndReturn, req.query.name, req.query.pass)
 }
 
 // all 4 list functions 
@@ -190,18 +194,31 @@ functionality.listTodos = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
-	var id;
-	sqlservice.getTodosbyId(printAndReturn, id)
+
+	var id = tokens[req.query.token];
+	sqlservice.getTodosById(printAndReturn, id)
 }
 
-functionality.listNotes = function(req, res) {
+functionality.listTodoItems = function(req, res) {
 	setCORSHeaders(res)
-
 	var printAndReturn = function(err, rows) {
 		console.log(rows)
 		res.json(rows)
 	}
-	var id;
+
+	var id = tokens[req.query.token];
+	sqlservice.getTodoItemsById(printAndReturn, id)
+}
+
+functionality.listNotes = function(req, res) {
+	setCORSHeaders(res)
+	
+	var printAndReturn = function(err, rows) {
+		console.log(rows)
+		res.json(rows)
+	}
+	
+	var id = tokens[req.query.token];
 	sqlservice.getNotesById(printAndReturn, id)
 }
 
@@ -212,7 +229,8 @@ functionality.listEvents = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
-	var id;
+
+	var id = tokens[req.query.token];
 	sqlservice.getEventsById(printAndReturn, id)
 }
 // end all 4 list functions
@@ -226,6 +244,7 @@ functionality.addUser = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
+
 	user = {};
 	sqlservice.addUser(printAndReturn, user)
 }
@@ -237,7 +256,17 @@ functionality.addEvent = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
-	event = {};
+
+	event = {
+		id: tokens[req.query.token],
+		title: req.query.title,
+		day: req.query.day,
+		month: req.query.month,
+		year: req.query.year,
+		hour: req.query.hour,
+		tag: req.query.tag,
+		place: req.query.place
+	};
 	sqlservice.addEvent(printAndReturn, event)
 }
  
@@ -248,8 +277,27 @@ functionality.addTodo = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
-	todo = {};
+	todo = {
+		id: 55,
+		name: "TEXTSAMPLE",
+		tag: "blue"
+	};
 	sqlservice.addTodo(printAndReturn, todo)
+}
+
+functionality.addTodoItem = function(req, res) {
+	setCORSHeaders(res)
+
+	var printAndReturn = function(err, rows) {
+		console.log(rows)
+		res.json(rows)
+	}
+	item = {
+		id: 35,
+		content: "ITEMSAPLCE",
+		checked: "Blue"
+	};
+	sqlservice.addTodoItem(printAndReturn, item)
 }
 
 functionality.addNote = function(req, res) {
@@ -259,7 +307,11 @@ functionality.addNote = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
-	note = {};
+	note = {
+		id: tokens[req.query.token],
+		name: req.query.title,
+		content: req.query.content
+	}
 	sqlservice.addNote(printAndReturn, note)
 }
 // end all add functions
@@ -273,7 +325,7 @@ functionality.removeUser = function(req, res) {
 		console.log(rows)
 		res.json(rows)
 	}
-	var id;
+	var id = tokens[req.query.token];
 	sqlservice.removeUserById(printAndReturn, id)
 }
 
@@ -282,10 +334,13 @@ functionality.removeNote = function(req, res) {
 
 	var printAndReturn = function(err, rows) {
 		console.log(rows)
-		res.json(rows)
+		res.json("Note removed")
 	}
-	var id;
-	sqlservice.removeNoteById(printAndReturn, id)
+	var id = tokens[req.query.token]
+	var title = req.query.title
+	var content = req.query.content
+	
+	sqlservice.removeNoteById(printAndReturn, id, title, content)
 }
 
 functionality.removeTodo = function(req, res) {
@@ -293,21 +348,38 @@ functionality.removeTodo = function(req, res) {
 
 	var printAndReturn = function(err, rows) {
 		console.log(rows)
-		res.json(rows)
+		res.json("Todo removed")
 	}
-	var id;
+	var id = tokens[req.query.token];
 	sqlservice.removeTodoById(printAndReturn, id)
 }
 
-functionality.removeEvent = function(req, res) {
+functionality.removeTodoItem = function(req, res) {
 	setCORSHeaders(res)
 
 	var printAndReturn = function(err, rows) {
 		console.log(rows)
 		res.json(rows)
 	}
-	var id;
-	sqlservice.removeEventById(printAndReturn, id)
+	var id = tokens[req.query.token];
+	sqlservice.removeTodoItemById(printAndReturn, id)
+}
+
+functionality.removeEvent = function(req, res) {
+	setCORSHeaders(res)
+	
+	
+	var printAndReturn = function(err, rows) {
+		console.log(rows)
+		res.json(rows)
+	}
+	var id = tokens[req.query.token];
+	var title = req.query.title;
+	var day = req.query.day;
+	var month = req.query.month;
+	var year = req.query.year;
+
+	sqlservice.removeEventById(printAndReturn, id, title, day, month, year)
 }
 
 // end all 4 delete functions

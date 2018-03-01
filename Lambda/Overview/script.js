@@ -1,28 +1,39 @@
+window.onload = function()
+{
+	runTest()
+	LoadEventData()
+	Update_Block()
+}
+
+serverUrl = "http://127.0.0.1:8080"
+
+tokenData = {
+	token: localStorage.token
+}
+
+var evt;
+
 function runTest()
 {
-	serverUrl = "http://192.168.1.163:8080"
-
-	loginData = {
-		name: "Dragos",
-		pass: "test"
-	}
-
-	loginResponse = getRequest(serverUrl + "/api/login", loginData)
-	tokenString = loginResponse.responseJSON;
-	console.log(tokenString)
-
-	tokenData = {
-		token: tokenString
-	}
-	console.log(tokenData)
+	
 	notesResponse = getRequest(serverUrl + "/api/note/list",  tokenData)
-	todoResponse  = getRequest(serverUrl + "/api/todo/list",  tokenData)
 	eventRespone  = getRequest(serverUrl + "/api/event/list", tokenData)
+	todoResponse  = getRequest(serverUrl + "/api/todo/list",  tokenData)
+	todoItemResponse = getRequest(serverUrl + "/api/todoitem/list", tokenData)
 
-	notes = notesResponse.responseJSON
-	todo  = todoResponse.responseJSON
-	event = eventRespone.responseJSON
+	notes  = notesResponse.responseJSON
+	events = eventRespone.responseJSON
+	todos  = todoResponse.responseJSON
+	items  = todoItemResponse.responseJSON
 
+	evt = events
+
+	console.log(notes)
+	console.log(events)
+	console.log(todos)
+	console.log(items)
+
+	GetNoteList(notes)
 	/*
 	for (room of rooms) {
 
@@ -67,6 +78,32 @@ function postRequest(url, data)
 	});
 }
 
+function Username_Button()
+{
+	// save everything
+}
+
+function GetNoteList(note_list)
+{
+	// get from database
+	for (note of note_list)
+	{
+		Create_Note(note.name, note.tag)
+	}
+}
+
+function GetTodoList(todo_list)
+{
+	// get from database
+}
+
+function GetTodoItemList(todo_item_list)
+{
+	// get from database
+}
+
+
+
 var Months = [ ["January", 31], ["February", 29], ["March", 31],
 				 ["April", 30], ["May", 31], ["June", 30], 
 		  		 ["July", 31], ["August", 31], ["September", 30], 
@@ -84,64 +121,84 @@ function Event() {
 var copy_replace;
 var copy_initial_children;
 
-window.onload = function()
-{
-	Update_Block();
-}
+var EventList = [];
 
-function GetEventList()
+function LoadEventData()
 {
-	// get from database
-	
-	var EventList = [];
-	
+		//  § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § 
 	var date = new Date();
 	var string_date = date.getDate() + " " + String(parseInt(date.getMonth())+1) + " " + date.getFullYear();
 	
 	// dummy data 
-	var ev_1 = new Event();
-	ev_1.title = "Meeting at lorem ipsum";
-	ev_1.tag = "event_blue";
-	ev_1.date = "3 2 2018";
-	
-	var ev_2 = new Event();
-	ev_2.title = "Lunch afer sample text";
-	ev_2.tag = "event_yellow";
-	ev_2.date = "3 2 2018";
-	
-	var ev_3 = new Event();
-	ev_3.title = "Meeting  tsgewg ir text data";
-	ev_3.tag = "event_red";
-	ev_3.date = "3 2 2018";
-	
-	var ev_4 = new Event();
-	ev_4.title = "Lunch afer wertg";
-	ev_4.tag = "event_yellow";
-	ev_4.date = "19 8 2018";
-	
-	var ev_5 = new Event();
-	ev_5.title = "Meeting sample text universal";
-	ev_5.tag = "event_red";
-	ev_5.date = "19 8 2018";
-	
-	var ev_6 = new Event();
-	ev_6.title = "Lunch afer lorem";
-	ev_6.tag = "event_yellow";
-	ev_6.date = "20 9 2018";
-	
-	var ev_7 = new Event();
-	ev_7.title = "Meeting ana are mere";
-	ev_7.tag = "event_blue";
-	ev_7.date = "20 9 2018";
+	var ev_1 = {
+		title: "Meeting at lorem ipsum",
+		tag: "event_blue",
+		day: "1",
+		month: "3",
+		year: "2018"
+	}
+
+	var ev_2 = {
+		title: "Lunch afer sample text",
+		tag: "event_yellow",
+		day: "1",
+		month: "3",
+		year: "2018"
+	}
+
+	var ev_3 = {
+		title: "Meeting  tsgewg ir text data",
+		tag: "event_red",
+		day: "1",
+		month: "3",
+		year: "2018"
+	}
+
+	var ev_4 = {
+		title: "Lunch afer wertg",
+		tag: "event_yellow",
+		day: "19",
+		month: "8",
+		year: "2018"
+	}
+
+	var ev_5 = {
+		title: "Meeting sample text universal",
+		tag: "event_red",
+		day: "20",
+		month: "8",
+		year: "2018"
+	}
+
+	var ev_6 = {
+		title: "Lunch afer lorem",
+		tag: "event_yellow",
+		date: "20 9 2018"
+	}
+
+	var ev_7 = {
+		title: "Meeting ana are mere",
+		tag: "event_blue",
+		date: "20 9 2018"
+	}
 	
 	EventList.push(ev_1);
 	EventList.push(ev_2);
 	EventList.push(ev_3);
-	EventList.push(ev_4);
+	/*EventList.push(ev_4);
 	EventList.push(ev_5);
 	EventList.push(ev_6);
-	EventList.push(ev_7);
+	EventList.push(ev_7);*/
 	// end dummy data
+	
+	for (Event of evt)
+	{
+		EventList.push(Event);
+	}
+}
+
+function GetEventList()
+{
 	
 	return EventList;
 }
@@ -219,22 +276,31 @@ function Create_Block()
 // end add upcoming label ***********************
 	
 // Add upcoming dates ***************************
-	
 	var event_list = GetEventList();
 	var date_list = new Set();
-	var date = new Date();
-	var string_date = date.getDate() + " " + String(parseInt(date.getMonth())+2) + " " + date.getFullYear();
+	//var date = new Date();
+	//var string_date = date.getDate() + " " + String(parseInt(date.getMonth())+1) + " " + date.getFullYear();
 	
+	var current_day = date.getDate()
+	var current_month = date.getMonth()
+	var current_year = date.getFullYear()
+
 	for (event of event_list)
 	{
-		if (evnt.date === string_date)
+		if (event.day === current_day && event.month === current_month && event.year === current_year)
 			continue;
-		
-		date_list.add(evnt.date);
+		else {
+			var lst = {
+				day: event.day,
+				month: event.month,
+				year: event.year
+			}
+			date_list.add(lst);
+		}
 	}
 	for (date of date_list)
 	{
-		var event_up = Add_Upcoming_Events(date);
+		var event_up = Add_Upcoming_Events(date); 
 		
 		div_children.appendChild(event_up);
 	}
@@ -261,17 +327,35 @@ function X_Cancel_Event_Button()
 
 function Add_event_database()
 {
-	var tmp = new Event()
-	tmp.title = document.getElementById("new_event_name").value;
-	tmp.place = document.getElementById("new_event_place").value;
-	tmp.hour = document.getElementById("event_hour_add").value;
-	tmp.tag = "event_" + document.getElementById("event_tag_add").value;
-	tmp.date = document.getElementById("event_day_add").value + ' ' + document.getElementById("event_month_add").selectedIndex + ' ' + document.getElementById("event_year_add").value;
-	
+	var add_event_data = {
+		token: tokenData.token,
+		title: document.getElementById("new_event_name").value,
+		place: document.getElementById("new_event_place").value,
+		hour: document.getElementById("event_hour_add").value,
+		tag: "event_" + document.getElementById("event_tag_add").value,
+		day: document.getElementById("event_day_add").value,
+		month: String(parseInt(document.getElementById("event_month_add").selectedIndex)+1),
+		year: document.getElementById("event_year_add").value
+	}
 	//add event to database
-	
-	console.log(tmp);
+	//  § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § 
+	var d = new Date();
+	if (add_event_data.title == null || add_event_data.title == undefined) {X_Cancel_Event_Button();return;}
+	if (parseInt(add_event_data.year) < d.getFullYear()) {X_Cancel_Event_Button();return;}
+	else if (parseInt(add_event_data.year) == d.getFullYear())
+	{
+		if (parseInt(add_event_data.month) < d.getMonth()) {X_Cancel_Event_Button();return;}
+		else if (parseInt(add_event_data.month) == d.getMonth())
+		{
+			if (parseInt(add_event_data.day) < d.getDate()) {X_Cancel_Event_Button();return;}
+		}	
+	} 
+		
+	EventList.push(add_event_data);
 	X_Cancel_Event_Button();
+	Clear_Event_Data();
+	Update_Block();
+	add_event = getRequest(serverUrl + "/api/event/add",  add_event_data)
 }
 
 
@@ -306,14 +390,18 @@ function Add_Event_Today_Title(content)
 
 function Add_Event_Today(event_list)
 {
+	//  § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § 
+
 	var event = document.createElement("div");
 	event.id = "event";
 	var date = new Date();
-	var string_date = date.getDate() + " " + String(parseInt(date.getMonth())+1) + " " + date.getFullYear();
+	var string_date = date.getDate() + " " + String(parseInt(date.getMonth())) + " " + date.getFullYear();
 	
+
 	for (evnt of event_list)
 	{
-		if (evnt.date === string_date) {
+		if (evnt.day == date.getDate() && evnt.month == String(parseInt(date.getMonth())+1) && evnt.year == date.getFullYear()) {
+
 			var tag_div = Add_Event_Today_Tag(evnt.tag);
 			var title_div = Add_Event_Today_Title(evnt.title);
 			var br = document.createElement("br");
@@ -356,27 +444,27 @@ function Add_Event()
 
 function Add_Upcoming_Events(date) 
 {
-	if (date.size === 10)
-	{
-		var string_date = date.substring(0,2) + ", " + Months[parseInt(date.substring(3,4))][0];
-	}
-	else
-	{
-		var string_date = date.substring(0,2) + ", " + Months[parseInt(date[3])][0];
-	}
+	//  § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § 
 	var event_upcom = document.createElement("div");
 	event_upcom.id = "event_up";
 	
 	var event_up_date = document.createElement("div");
 	event_up_date.id = "event_up_date";
-	event_up_date.innerHTML = string_date;
 	
+	var date_ob = new Date();
+	var current_year = date_ob.getFullYear();
+	
+	event_up_date.innerHTML = date.day + " " + Months[parseInt(date.month)-1][0];
+
+	if (current_year != date.year)
+		event_up_date.innerHTML += "<i>" + date.year + "</i>";
+
 	event_upcom.appendChild(event_up_date);
 	
 	var event_list = GetEventList();
 	for (event of event_list)
 	{
-		if (date === event.date)
+		if (date.day == event.day && date.month == event.month && date.year == event.year)
 		{
 			var tag_div = Add_Event_Today_Tag(event.tag);
 			var title_div = Add_Event_Today_Title(event.title);
@@ -406,9 +494,19 @@ function Plus_Add_Event_Button()
 	block.appendChild(copy_replace);
 }
 
+function Clear_Event_Data()
+{
+	var myNode = document.getElementById("event");
+	while (myNode.firstChild) 
+    	myNode.removeChild(myNode.firstChild);
+	var myNode = document.getElementById("upcoming_events");
+	while (myNode.firstChild) 
+    	myNode.removeChild(myNode.firstChild);
+}
 
 function Update_Block()
 {	
+
 // Add Today label ****************************
 	var title_today = document.getElementById("event_date");
 	title_today.innerHTML = GetDateToday();
@@ -427,20 +525,32 @@ function Update_Block()
 	var event_list = GetEventList();
 	var date_list = new Set();
 	var date = new Date();
-	var string_date = date.getDate() + " " + String(parseInt(date.getMonth())+2) + " " + date.getFullYear();
-	
+	//  § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § § 
+
+	var current_day = date.getDate()
+	var current_month = String(parseInt(date.getMonth())+1)
+	var current_year = date.getFullYear()
+
 	for (event of event_list)
 	{
-		if (evnt.date === string_date)
+		if (event.day == current_day && event.month == current_month && event.year == current_year)
 			continue;
-		
-		date_list.add(evnt.date);
+		else {
+			var lst = {
+				day: event.day,
+				month: event.month,
+				year: event.year
+			}
+			date_list.add(lst);
+		}
 	}
 	for (date of date_list)
 	{
-		var event_up = Add_Upcoming_Events(date);
-		
-		upcoming_events.appendChild(event_up);
+		if(date != "SampleDATE")
+		{
+			var event_up = Add_Upcoming_Events(date); 
+			upcoming_events.appendChild(event_up);
+		}
 	}
 // end add upcoming dates ***********************
 }
@@ -522,7 +632,7 @@ function Plus_Add_Note_Button()
 	else if(document.getElementById("note_change_icon").innerHTML == "archive")
 	{
 		var title = document.getElementById("note_list_title").value
-		var content = document.getElementById("textarea_div").innerText
+		var content = document.getElementById("textarea_div").innerHTML
 		document.getElementById("note_list_title").value = "Notes"
 		document.getElementById("note_list_title").readOnly = true;
 		document.getElementById("note_list").style.display = "block";
@@ -533,11 +643,20 @@ function Plus_Add_Note_Button()
 		document.getElementById("note").removeChild(remove_2)
 		document.getElementById("note_change_icon").innerHTML = "create"
 		Create_Note(title, content)
+
+		// update database
+		add_data = {
+			token: tokenData.token,
+			title: title,
+			content: content
+		}
+
+		add_note = getRequest(serverUrl + "/api/note/add",  add_data)
 	}
 	else if (document.getElementById("note_change_icon").innerHTML == "check")
 	{ 
 		var title = document.getElementById("note_list_title").value
-		var content = document.getElementById("textarea_div").innerText
+		var content = document.getElementById("textarea_div").innerHTML
 		document.getElementById("note_list_title").value = "Notes"
 		document.getElementById("note_list_title").readOnly = true;
 		
@@ -550,14 +669,22 @@ function Plus_Add_Note_Button()
 		note.scrollTop = 1;
 		document.getElementById("note_change_icon").innerHTML = "create"
 		Create_Note(title, content)
+
+		// update database
+		add_data = {
+			token: tokenData.token,
+			title: title,
+			content: content
+		}
+
+		add_note = getRequest(serverUrl + "/api/note/add",  add_data)
 	}
 }
 
 function Open_Note_Preview(div_summary)
 {
-	var title = div_summary.children[0].innerText
-	var content = div_summary.children[1].innerText
-
+	var title = div_summary.children[0].innerHTML
+	var content = div_summary.children[1].innerHTML
 	div_summary.remove()
 
 	document.getElementById("note_list_title").value = title
@@ -623,6 +750,15 @@ function Open_Note_Preview(div_summary)
 	document.getElementById("note").appendChild(noteContent)
 	
 	document.getElementById("note_change_icon").innerHTML = "check"
+
+	// update database
+	remove_data = {
+		token: tokenData.token,
+		title: title,
+		content, content
+	}
+	console.log(remove_data)
+	remove_note = getRequest(serverUrl + "/api/note/remove",  remove_data)
 }
 
 

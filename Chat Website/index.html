@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+		<div class="signin">
+			<div class="signspan" data-toggle="modal" data-target="#myModal">Sign in</div>
+
+			<!-- Modal -->
+  			<div class="modal fade" id="myModal" role="dialog">
+   				<div class="modal-dialog">
+    
+      				<!-- Modal content-->
+      				<div class="modal-content">
+       					<div class="modal-header">
+          					<button type="button" class="close" data-dismiss="modal"></button>
+         					<h4 class="modal-title">Sign in</h4>
+        				</div>
+       					<div class="modal-body">
+          					<p>Enter your username and password</p><br>
+          					<div class="row">
+          						<div class="col-sm-12">
+          							<input autofocus type="text" class="form-control" placeholder="Enter name here" id="usr">
+          						</div>
+          					</div>
+          					<br> <br>
+          					<div class="row">
+          						<div class="col-sm-12">
+          							<input type="password" width="100%" class="form-control form2" placeholder="Enter password here" id="pwd">
+          					<script>
+		 						$('.form2').keypress(function(event){
+  									if(event.keyCode == 13){
+    									$(".btn2")[0].click();
+  									}
+								});	
+		 					</script>
+          						</div>
+          					</div>
+           				</div>
+           				<div class="modal-footer">
+          					<button type="button" class="btn btn2 btn-success" id="usrnm" data-dismiss="modal" onclick="Login()">Sign in</button>
+
+        				</div>
+     				</div>
+      			</div>
+      		</div>
+      	</div>
+		<div id="side-menu">
+			<div class="top_search_bar">
+				<center><input type="text" id="search_box" placeholder="Search"/></center>
+			</div>
+			
+			<div class="message_list">
+				<div style="color: white" class="message">
+					<div class="row">
+						<div class="col-sm-4">
+							<img  width="75px" height="75px" src="images/contact-icon.png"/> 
+						</div>
+						<div class="col-sm-8">
+							<div class="row">
+								<span style="float: right; margin-right: 4%"><b>Grupul Unu</b></span> 
+							</div>
+							<div class="row">
+								<span style="float: right"><i>21/10/2018</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="color: white" class="message">
+					<div class="row">
+						<div class="col-sm-4">
+							<img width="75px" height="75px" src="images/contact_icon.png"/> 
+						</div>
+						<div class="col-sm-8">
+							<div class="row">
+								<span style="float: right; margin-right: 4%"><b>Intrunirea Doi</b></span>
+							</div>
+							<div class="row">
+								<span style="float: right"><i>21/10/2018</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="color: white" class="message">
+					<div class="row">
+						<div class="col-sm-4">
+							<img width="75px" height="75px" src="images/female_icon.png"/>
+						</div>
+						<div class="col-sm-8">
+							<div class="row">
+								<span style="float: right; margin-right: 4%"><b>Comitetul Trei</b></span>
+							</div>
+							<div class="row">
+								<span style="float: right"><i>21/10/2018</i></span>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<div style="color: white" class="message">
+					<div class="row">
+						<div class="col-sm-4">
+							<img width="75px" height="75px" src="images/contact_icon2.png"/>
+						</div>
+						<div class="col-sm-8">
+							<div class="row">
+								<span style="float: right; margin-right: 4%"><b>Asezarea patru</b></span>
+							</div>
+							<div class="row">
+								<span style="float: right"><i>21/10/2018</i></span>
+							</div>
+						</div>
+					</div>				
+				</div>
+				<div style="color: white" class="message">
+					<div class="row">
+						<div class="col-sm-4">
+							<img  width="75px" height="75px" src="images/group-icon.png"/>
+						</div>
+						<div class="col-sm-8">
+							<div class="row">
+								<span style="float: right; margin-right: 4%	"><b>Gasca Cinci</b></span>
+							</div>
+							<div class="row">
+								<span style="float: right"><i>21/10/2018</i></span>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		
+		<div id="container">
+			<div class="row top">
+				<div class="col-sm-2">
+					<button onclick="Burger_Pressed()" id="burger-btn"><img id="burger-img" src="images/burger_icon2.png" class="img-responsive"/></button>
+				</div>
+				<div class="col-sm-10">
+					<center><span id="title">The <b>forum</b></span></center>
+				</div>
+			</div>
+			
+			<div id="messages-field">
+				<center>
+					<div id="contact">
+						<div class="row">
+							<div class="col-sm-12" style="margin-top: 1.5%">		
+								<div class="row">
+									<img width="80px" src="images/contacts-icon.png" style="dispaly: inline-block; margin-top:-4%"/>
+									<span id="contactname">Walter Waltovici</span><br>
+									<span style="color: gray">You're connected</span>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="background">
+						<div class="messagelist">
+							<ul id="listmsg" scrollTop = "scrollHeight">
+								<li>
+									<div class="rightmessage">
+										Lorem ipsum example message written just so.<br>
+										Ana are mere iar Nelu nu mai are mere ca le-a luat Ana
+									</div>
+
+									<div class="leftmessage">					
+										Acesta este un text exemplu si trebuie tratat ca atare <br>
+										Oice interpreaare potate fi refuzata din motive afernete <br>
+										Ultimul rand a fost scris doar pentru a vedea cum arara mesajul cu 4 randuri<br>
+										<span class="span_mess">Name</span><br>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+		<center>
+		<div class="input">
+			<div class="row message_input">
+				<div class="col-md-11">
+		 			<textarea class="form-control form1" id="textarea" placeholder="Type your messag in here" rows="2" id="comment" style="resize: none; font-family: serif font-size:120%;"></textarea>
+		 			<script>
+		 			$('.form1').keypress(function(event){
+  						if(event.keyCode == 13){
+    						Post_Message_Local();
+  						}
+					});	
+		 			</script>
+				</div>
+				<div class="col-md-1">
+					<button type="button" class="btn btn1 btn-primary" onclick="Post_Message_Local()">
+				Send</button>	
+				</div>
+			</div>
+		</div>	
+		</center>
+	</body>
+</html>

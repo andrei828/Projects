@@ -20,8 +20,6 @@
 		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
 	</head>
@@ -34,7 +32,7 @@
 		</div>
 		
 		<div id="logo">
-			<img src="images/Logo.png" width="300px" height="100px" style="border-radius: 15px; display: inline-block;"/>
+			<img src="images/Logo.png" width="30%" height="30%" style="border-radius: 15px; display: inline-block;"/>
 		</div>
 		
 
@@ -50,79 +48,15 @@
 			<center>
     		<div id="note">
 				<div class="mdl-layout__header-row" id="note_title_div">
-					
 					<input id="note_list_title" value="Notes" readonly/>
 				</div>
 					<!-- Colored FAB button with ripple -->
-						<button id="add_note" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="Plus_Add_Note_Button()">
-  						<i id="note_change_icon" class="material-icons">create</i>
-						</button>
+					<button id="add_note" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="Plus_Add_Note_Button()">
+  					<i id="note_change_icon" class="material-icons">create</i>
+					</button>
 				
-			<div id="note_list">
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title" >
-						Groceries
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
+				<div id="note_list">
 				</div>
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title">
-						ShopList
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
-				</div>
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title">
-						Other Stuff
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
-				</div>
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title">
-						Payments
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
-				</div>
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title">
-						Fonts
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
-				</div>
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title">
-						Groceries
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
-				</div>
-				<div class="note_summary" onclick="Open_Note_Preview(this)">
-					<div class="note_summary_title">
-						LastList
-					</div>
-					
-					<div class="note_summary_preview">
-						Lorem ipsum golores fanta cola scpirte sprite vepibnerb 
-					</div>
-				</div>
-			</div>
 				
 			</div>
 			</center>
@@ -138,10 +72,10 @@
 							<span class="mdl-layout-title" id="event_list_title">Events</span>
 					</div>
 					<!-- Colored FAB button with ripple -->
-						<button id="add_event" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="		Plus_Add_Event_Button()">
+						<button id="add_event" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="Plus_Add_Event_Button()">
   						<i class="material-icons">add</i>
 						</button>
-				
+						<div id="scrolling">
 						<div id="event_date"> Today, 7 Jan</div>
 						<div id="event">
 		
@@ -153,6 +87,7 @@
 						<div id="upcoming_events">
 							
 						</div>
+				</div>
 			</div>
 			</div>
 
@@ -164,7 +99,7 @@
 			</div>
 			<!-- Colored FAB button with ripple -->
 				<button id="add_event" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="X_Cancel_Event_Button()">
-  				<i class="material-icons">cancel</i>
+  				<i class="material-icons">clear</i>
 				</button>
 		<!-- After click-->
 <br><br>
