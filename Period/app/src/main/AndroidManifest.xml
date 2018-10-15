@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andrei.period">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blood_dropx"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/blood_drop"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.andrei.period.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.andrei.period.SetupFirstPeriod" />
+        <activity android:name="com.andrei.period.PeriodAnalysis" />
+        <activity android:name="com.andrei.period.EditPeriod" android:parentActivityName="com.andrei.period.MainActivity" />
+    </application>
+
+</manifest>

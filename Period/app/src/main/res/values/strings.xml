@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="welcome">Welcome</string>
+    <string name="select_text">Please select the last date of period</string>
+    <string name="select_text2">How many days in a cycle</string>
+    <string name="choose_text">Select</string>
+    <string name="proceed_button">Proceed</string>
+    <string name="app_name">Period</string>
+    <string name="toggled_time">toggled_time</string>
+    <string name="period_list_size">period_list_size</string>
+    <string name="period_template">period_start_</string>
+    <string name="period_template_end">period_end_</string>
+    <string name="period_cycle">period_cycle</string>
+    <string name="text_days_until_period">Days until period</string>
+    <string name="switch_period_start">Menstruation time</string>
+    <string name="today">Today</string>
+    <string name="past_periods_text">Past dates</string>
+    <string name="day_period_template">day_period_</string>
+    <string name="day_period_1">First day of period</string>
+    <string name="day_period_2">Second day of period</string>
+    <string name="day_period_3">Third day of period</string>
+    <string name="day_period_4">Fourth day of period</string>
+    <string name="day_period_5">Fifth day of period</string>
+    <string name="day_period_6">Sixth day of period</string>
+    <string name="day_period_7">Seventh day of period</string>
+
+    <string name="chance_of_pregnancy_text">Chance of pregnancy</string>
+    <string name="chance_of_pregnancy_very_low">It\'s very low, less than 30%</string>
+    <string name="chance_of_pregnancy_very_high">It\'s very high, more than 70%</string>
+    <string name="chance_of_pregnancy_low">It\'s pretty low, about 30%</string>
+    <string name="chance_of_pregnancy_high">It\'s a fair bet, about 50%</string>
+
+
+    <string name="information_period_text">What happens to my body</string>
+    <string name="information_period_1">When the cycle starts, the uterus lining begins to break down and menstruation occurs</string>
+    <string name="information_period_2">The lining of the womb thickens in preparation for the egg</string>
+    <string name="information_period_3">Ovulation occurs and it\'s the time with the highest pregnancy chance</string>
+    <string name="information_period_4">After ovulation, if fertilisation has not occurred, the corpus luteum fades away</string>
+    <string name="information_period_5">The uterine lining detaches and menstruation begins</string>
+
+
+    <string name="mood_symptoms_text">Previous dates</string>
+    <string name="previous_dates">Tap this bubble to visualise a broader view of the past period cycles</string>
+
+    <string name="edit_period">Edit period date</string>
+    <string name="edit_began">Began on </string>
+    <string name="edit_lasted">Lasted for</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="delete_button">Delete</string>
+    <string name="chance_of_pregnancy">Chance_Of_Pregnancy</string>
+</resources>
