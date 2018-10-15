@@ -1,62 +1,36 @@
-#ifndef Project_1_Manager_h
-#define Project_1_Manager_h
+#pragma once
 
 #include <iostream>
-#include <fstream>
-#include <string>
-#include <string.h>
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <direct.h>
+#include <io.h>
+#include <fstream>
+#include <cstring>
+#include <Windows.h>
 using namespace std;
 
-class Manager {
+class Manager
+{
 public:
-    
-    Manager();
-    
-    void SetPath(string path);
-    void CreateFile(char path[], char mask[], char name[]);
-    
-    string GetPath();
-    
+
+	Manager();
+	~Manager();
+
+	void SetPath(LPCWSTR p);
+	void CreateFile(const char * name);
+	void RemoveFile(const char * name);
+	void RenameFile(const char * oldname, const char * newname);
+	void CreateFolder(const char * name);
+	void RemoveFolder(const char * name);
+	void FindFile(char * name, const char * mask);
+
+	LPCWSTR GetP();
+	char * GetPath();
+
 private:
-    
-    string path;
-    
+
+	char * path;
+	LPCWSTR p;
+
 };
-
-Manager::Manager()
-{
-    
-}
-
-void Manager::SetPath(string path)
-{
-    this -> path = path;
-}
-
-void Manager::CreateFile(char path[], char mask[], char name[])
-{
-    char str[80];
-    path = "/Users/Andrei/Documents/Swift/Project_1/Project_1/";
-    name = "Sample";
-    mask = ".txt";
-    strcpy(str, path);
-    strcat(str, name);
-    strcat(name, mask);
-    
-    fstream file;
-    file.open(name, ios::in | ios::out | ios::app);
-    if (!file.is_open()) {
-        cout << "There was an error opening the file " << endl;
-    } else{
-        file << "Success"<< endl;
-    }
-}
-
-string Manager::GetPath()
-{
-    return path;
-}
-
-#endif
