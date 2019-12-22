@@ -1,7 +1,7 @@
 ﻿# Older projects repository
-This is a repo with a few projects I built in high-school. Given the fact that this is the beginning of my development journey, the code needs a lot of improvement. However, this repo offers a great perspective of the evolution in coding style and problem solving.\ 
-For the purpose of learning, I used multiple programming languages to familiarize myself with **different paradigms** (imperative/declarative) and **diverse acts of compiling** (AOT/JIT)\
-> **Note:**  Most projects here haven't been updated in the last 3 years, so some of them might need some tweaking to work properly.\
+This is a repo with a few projects I built in high-school. Given the fact that this is the beginning of my development journey, the code needs a lot of improvement. However, this repo offers a great perspective of the evolution in coding style and problem solving.  
+For the purpose of learning, I used multiple programming languages to familiarize myself with **different paradigms** (imperative/declarative) and **diverse acts of compiling** (AOT/JIT)  
+> **Note:**  Most projects here haven't been updated in the last 3 years, so some of them might need some tweaking to work properly.  
 
 ### Here is a list with the main projects and a short description for each one
 |Project Name    |Programming languages          |Short description            |
