@@ -4,8 +4,8 @@
   "description": "Lambda Server",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "sqlite3": "^3.1.13"
   },
   "devDependencies": {},
